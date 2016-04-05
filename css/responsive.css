@@ -1,27 +1,25 @@
-/* CSS Resets NOTE ******** some of these reset are overiding screen values. */
+/* CSS Resets NOTE ******** some of these reset are overiding screen values - todo: add responsive css befroe screen */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%} 
 
+html {
+box-sizing:border-box;	
+}
+
 /*
- colour 
+ colour palette can be used for sass later 
  hn green #00843d   
  green-grey #879090;
 */
 
-html {
-color: black;
-box-sizing:border-box;	
-}
-
-/* Override max-width 100% for Gmaps & Getlocations
+/* this code below code could be moved and/or documented better
+Override max-width 100% for Gmaps & Getlocations
 ================================================== */
 .gmap img, #getlocations_map_canvas img {
 max-width: none;
 }
+/* added so datepicker doesn't appear on load and positions properly - bug fix */
 #ui-datepicker-div {display:none;}
-#PL_div {display:none;}
-#tabs {
-padding-top:20px;
-}
+
 /* General Responsive */
 img { 
   max-width: 100%;
@@ -31,7 +29,12 @@ img {
 img, object, embed {
 max-width: 100%;
 }*/
-/* this code above could be moves
+#PL_div {display:none;}
+#tabs {
+padding-top:20px;
+}
+
+/* this code above could be moved
 ================================================== */
 
 
