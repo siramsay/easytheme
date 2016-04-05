@@ -1,7 +1,16 @@
 /* CSS Resets NOTE ******** some of these reset are overiding screen values. */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%} 
 
-/*HN GREEN #00843d   green-grey color: #879090;*/
+/*
+ colour 
+ hn green #00843d   
+ green-grey #879090;
+*/
+
+html {
+color: black;
+box-sizing:border-box;	
+}
 
 /* Override max-width 100% for Gmaps & Getlocations
 ================================================== */
@@ -22,6 +31,10 @@ img {
 img, object, embed {
 max-width: 100%;
 }*/
+/* this code above could be moves
+================================================== */
+
+
 /* Grid */
 .container,  .containerheader {
 padding-left: 15px;
