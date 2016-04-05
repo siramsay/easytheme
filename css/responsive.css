@@ -1,0 +1,705 @@
+/* CSS Resets NOTE ******** some of these reset are overiding screen values. */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%} 
+
+/*HN GREEN #00843d   green-grey color: #879090;*/
+
+/* Override max-width 100% for Gmaps & Getlocations
+================================================== */
+.gmap img, #getlocations_map_canvas img {
+max-width: none;
+}
+#ui-datepicker-div {display:none;}
+#PL_div {display:none;}
+#tabs {
+padding-top:20px;
+}
+/* General Responsive */
+img { 
+  max-width: 100%;
+  height: auto; 
+}
+/*
+img, object, embed {
+max-width: 100%;
+}*/
+/* Grid */
+.container,  .containerheader {
+padding-left: 15px;
+padding-right: 15px;
+}
+.row, .rowheader, .rowhero {
+width: 100%;
+max-width: 1140px;
+min-width: 735px;
+margin: 0 auto;
+overflow: hidden;
+}
+.containermain {
+margin-top: 40px;
+}
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .headerfourcol, .headereightcol, .sixcol_65, .sixcol_35, .view-deal .views-row-odd, .view-deal .views-row-even, .views-row-odd, .views-row-even, .node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9 { /*.view-niseko-services .views-row-odd, .view-niseko-services .views-row-even,*/
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+.threecol_large, .ninecol_large {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+.headereightcol {
+float:right;
+}
+.row .onecol, .nested .onecol {
+width: 4.85%;
+}
+.row .twocol, .nested .twocol {
+width: 13.45%;
+}
+.row .threecol, .nested .threecol {
+width: 22.05%;
+}
+.row .fourcol, .nested .fourcol, .row .headerfourcol {
+width: 30.75%;
+}
+.node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9 {
+width: 30.75%;
+}
+.row .headerfourcol {
+width: 25.75%;
+}
+.row .fivecol, .nested  .fivecol {
+width: 39.45%;
+}
+.row .sixcol, .nested .sixcol, .row .sixcol_65, .row .sixcol_35, .eightcol .fifty {
+width: 48%;
+}
+.view-deal .views-row-odd, .view-deal .views-row-even, .view-display-id-node_content_7 .views-row-odd, .view-display-id-node_content_7 .views-row-even, .views-row-odd, .views-row-even { /*.view-niseko-services .views-row-odd, .view-niseko-services .views-row-even,*/
+width: 48%;
+}
+.row .sevencol, .nested .sevencol {
+width: 56.75%;
+}
+.row .eightcol, .nested .eightcol, .row .headereightcol {
+width: 65.4%;
+}
+.row .ninecol, .nested .ninecol {
+width: 74.05%;
+}
+.row .tencol, .nested .tencol {
+width: 82.7%;
+}
+.row .elevencol, .nested .elevencol {
+width: 91.35%;
+}
+.row .twelvecol, .nested .twelvecol, .view-display-id-entity_view_7 .views-row, .view-display-id-node_content_9 .views-row, .view-Services-PDF .views-row, .view-id-Team .views-row, .view-display-id-block_2 .views-row, .view-Explore-Niseko .views-row-odd, .view-Explore-Niseko .views-row-even, .view-display-id-entity_view_5 .views-row { /* REMOVED FOR PROPERTY ATTACHED VIEW DEALS , .view-display-id-node_content_5 .views-row */
+width: 100%;
+float: left;
+} /*
+Homepage sticky : view-display-id-entity_view_7 < .view-display-id-node_content_8 .views-row
+attached view property :  view-display-id-entity_view_5 <.view-display-id-node_content_5
+*/
+.last, .eightcol .fiftylast, .view-deal .views-row-even, .views-row-even, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-3,.view-niseko-services .views-row-6, .view-niseko-services .views-row-9 {
+margin-right: 0px;
+}
+/* rb overides */
+#rbsearch .row, #rbsearch .rowheader, #rbsearch .rowhero {
+width: 960px;
+/*max-width: 1140px;
+min-width: 735px;*/
+margin: 0 auto;
+overflow: hidden;
+}
+#rbsearch #navigation {
+display: block;
+}
+#rbsearch #menu-wrap { /*.menu */
+display:block;
+}
+#rbsearch #mob-menu, #rbsearch #menu-icon, #rbsearch #search-icon  {
+display:none;
+}
+#rbsearch .phone, #rbsearch #header .eightcol {
+display:block;
+}
+#rbsearch #header {
+background-color: transparent;
+padding: 0;
+}
+#rbsearch  .row .headerfourcol {
+width:25.75%;
+}
+#rbsearch .row .headereightcol {
+width:65.4%;
+}
+#rbsearch .row .sevencol {
+width:56.75%;
+}
+#rbsearch #header h2.logo a {
+background: url("../img/logo_header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#rbsearch table.centered {
+/*width: 960px;*/
+}
+#rbsearch table.left, #searchform:vendorGrid, #rbsearch table#searchform:resultsPart1 {
+width: 690px;	
+}
+#rbsearch #ftrFrm table.centered {
+width: auto;
+}
+#rbn-searchmapfilter-layout {
+/*width: 100%;*/
+}
+.rbn_ven_descr {
+font-size:87.5%
+}
+/* hero*/
+.hero {
+background-position: center top;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+height: 300px;
+width: 100%;
+}
+#homepage_1 {
+margin-top: 40px;
+}
+.node-type-homepage .hero, .node-type-accommodation .hero {
+height: 400px;
+}
+.page-holiday-niseko-accommodation {
+background-position: center 38px;
+background-repeat: no-repeat;
+display: block;
+width: 100%; 
+}
+.page-luxury-niseko-accommodation .hero, .page-value-niseko-accommodation .hero, .page-niseko-hotel-ski-lodges .hero, .page-holiday-niseko-accommodation {
+background-image:url(../img/hero/luxury_accom.jpg)!important;	
+}
+.page-moderate-niseko-accommodation .hero {
+background-image:url(../img/hero/moderate_accom.jpg)!important;	
+}
+.page-value-niseko-accommodation .hero {
+background-image:url(../img/hero/value_accom.jpg)!important;	
+}
+.page-niseko-hotel-ski-lodges .hero {
+background-image:url(../img/hero/hotel_accom.jpg)!important;	
+}
+/*hide appended menu*/
+#menu-icon, #search-icon { display: none;} /* #navigation  MENU ICON FOR MOBILE*/
+#mob-menu {
+    display: none;
+}
+.page-search #search-icon, .search-info { display: none;}
+/* layout overides 
+================================================== */
+/* deal "BLOCKS" 
+view view-deal view-id-deal view-display-id-node_content_6 view-dom-id-2*/
+.deal_mid .top .title{
+		font-weight:bold!important; 
+}
+.deal_mid .mid span.price{
+		color:#ff0000;		 
+}
+.view-id-Team .mobile-image {
+		display: inline;
+		float:left;
+		width:30%;
+		margin-right: 3.8%;
+}
+.view-id-Team .mobile-data {
+		display: inline;
+		float:left;
+		width:60.75% ;
+		padding: 0;
+}
+
+@media only screen and (max-width: 1159px) {
+.page-node-add #header h2.logo a {
+margin: 0 0 10px 10px;	
+}
+}
+
+@media only screen and (max-width: 1139px) {
+.row .headerfourcol {
+padding-left: 15px;
+}
+.row .headereightcol {
+padding-right: 15px;
+}
+.row .sixcol_65 {
+padding-left:15px;
+padding-right:15px;
+}
+.view-all-niskeo-accommodation .sixcol_65 {
+padding-left:0;
+padding-right:0;
+}
+.row .sixcol_35 {
+width: 35%;
+}
+#block-block-14 { /* accom deals */
+margin-left: 40px;
+}
+#block-block-15 {
+	margin: 70px 0 0 20px;
+}
+.page-node-add #header h2.logo a {
+margin: 0 0 10px 10px;	
+}
+
+}
+@media only screen and (max-width: 1023px) {
+.node-type-weather .eightcol,  .node-type-weather .fourcol {
+width: auto;
+float: none;
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;	 
+}
+.weatherlinks {
+width: 100%;
+min-width: 0;
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+}
+.weatherlinks .eightcol, .weatherlinks .fourcol { 
+width: auto;
+float: none;
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+}
+.weatherlinks .fourcol {
+margin-top: 40px;
+}
+.row .sixcol_65, .view-all-niskeo-accommodation .sixcol_65 {
+width: 60%;
+}
+.row .sixcol_35 {
+width: 30%;
+}
+#block-block-14 { /* accom deals */
+display: none;
+margin-left: 40px;
+}
+#block-block-15 { /*HP benefits*/
+display: none;
+}
+.view-What-People-Say { /* needs checking */
+float:left;
+width: 100%;
+}
+#block-block-14 p {
+font-size: 170%;
+}
+}
+@media only screen and (max-width: 959px) {  /* 896 */
+.row .headerfourcol {
+width: 48%;
+}
+.row .headereightcol {
+width: 40%;
+}
+/* REMOVED IN MOBILE FOR DEV PURPOSES *****  ADD BACK LATER **** , #headertitle,  */
+#headerlang {
+	display:none;		
+}
+.phone, #header .eightcol{
+	display: none;
+	width:100%;
+}
+/* mobile menu */
+#menu-wrap { /*.menu */
+	display:none;
+}
+#search_top { /*search */
+	display:none;
+}
+#navigation .fivecol {
+	width: 100%;
+	padding-right: 15px;
+}
+/******** COPIED FROM ++ dk_base nsone *****/	
+#menu-icon, #search-icon {
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+    line-height: .66em;
+    margin: 0;
+    padding: 0 20px 0 0 ;
+	font-size:300%;
+	vertical-align:middle;
+	height:40px;
+}
+#menu-icon {
+	vertical-align:bottom;
+}
+#search-icon {
+	background: url(../img/search_mag_white.png) no-repeat 0 5px;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:40px;
+	padding: 0 0 0 0 ;
+}
+#more-icon {
+	margin:20px auto; 
+	padding:7px; 
+	width: 100px; 
+	color: #333; 
+	font-size: 100%; 
+	border:thin solid #333333;
+	cursor: pointer;
+	display: inline-block;
+    height: auto;
+	line-height: .66em;
+}
+#menu-icon.active {
+    background-color: #BBBBBB;
+}
+/******** COPIED FROM RESTAURANT http://whitelineshokkaido.com/ ++ dk_base nsone *****/		
+#header {
+	background-color: #00843d;
+	border-bottom: 0;
+	padding-top: 10px;
+	padding: 10px 0 10px 0;
+}		
+#mob-menu {
+		display: block;
+		height: 100%;
+		margin: 0 auto;
+		width: 100%;
+		background-color: #00843d;
+		}	
+#mob-menu .menu {
+		background-color: #00843d;
+		border: medium none;
+		clear: both;
+		display: none;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		top: 0;
+		z-index: 10000;
+		width:95%;
+		}	
+#mob-menu .menu ul {
+		margin: 0;
+		}	
+#mob-menu .menu li {
+		clear: both;
+		display: block;
+		float: none;
+		margin: 0 0 10px;
+		}		
+#mob-menu .menu a {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: medium none;
+	color: #F1F1F1;
+	display: block;
+	font: inherit;
+	padding: 0;
+	}
+#mob-menu .menu .last a  {
+	padding-bottom: 15px;
+	}		
+#mob-menu .menu a:hover {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #000000;
+	}
+
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media only screen and (max-width: 768px) {   /*929 */
+/*body.logged-in */
+html body.admin-menu {
+margin-top: 100px !important;
+background-position: center 0!important;
+}
+body {
+margin: 0 ;
+font-size: 1.0em;  /* changed 20113 04 2 */
+-webkit-text-size-adjust: none;
+}
+#bodywrapper {
+margin: 0;
+}
+.row, .container {
+width: 100%;
+min-width: 0;
+margin-top: 20px;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+.rowheader, .rowhero, .containerheader {
+width: 100%;
+min-width: 0;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+.rowheader, .rowhero {
+ margin-top: 0;
+}
+/* this needs reviewing above*/
+.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol, #navigation .fivecol {
+width: auto;
+float: none;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.nested .onecol, .nested .twocol, .nested .threecol, .nested .fourcol, .nested .fivecol, .nested .sixcol, .nested .sevencol, .nested .eightcol, .nested .ninecol, .nested .tencol, .nested .elevencol, .nested .twelvecol {
+width: auto;
+float: none;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+.view-display-id-node_content_7 .views-row-odd, .view-display-id-node_content_7 .views-row-even, .eightcol .fifty  {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+width: 48%;
+}
+.view-display-id-node_content_7 .views-row-even, .eightcol .fiftylast {
+margin-right:0
+}
+
+/********************************************************* footer  #footer .business, #footer .social,*/
+#footer div h2 a {
+ margin:20px 0 0;
+ float:left;
+}	
+.travel_agent {
+margin-left: 0!important;
+font-size:70%;
+}
+/********************************************************* need to check HN specific */
+#property_top .fourcol, #property_top .eightcol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	/*padding-left: 20px;
+	padding-right: 20px; REMOVED*/
+	}
+.features {
+    background-color: #FFFFFF;
+    padding: 0;
+}
+/*font stuff */
+#homepage_1 h2, .hero_title, .view-header h2 {
+    font-size: 150%;
+}
+.hero_subtitle {
+    font-size: 120%;
+}
+/* deal page buttons*/
+#block-block-11 {display:none;}
+/*  #search elements
+================================================== 
+/*#block-block-7 .content, #block-block-14 .content, .block-availability_search .content, .view-all-niskeo-accommodation .view-filters  { -> #block-block-7 .content  */
+#block-multiblock-1 .content, #block-multiblock-2 .content,  #block-multiblock-5 .content, #block-multiblock-6 .content, .view-all-niskeo-accommodation .view-filters  {
+	width: 95%;
+}
+.front .about p {
+
+margin: 0 0 0 0;
+}
+.page-holiday-niseko-accommodation {
+background-position: center -40px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+.row .headerfourcol {
+width: 20%;
+}
+.row .headereightcol {
+width: 60%;
+}
+.views-row-odd, .views-row-even, .view-deal .views-row-odd, .view-deal .views-row-even { /* , .view-deal .views-row-odd, .view-deal .views-row-even  add this for deals pages ONLY*/
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+.node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9, .eightcol .fifty {
+    width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.row .sixcol_65, .row .sixcol_35 {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.view-all-niskeo-accommodation .sixcol_65, .view-all-niskeo-accommodation .sixcol_35 {
+padding-left:0;
+padding-right:0;
+}
+.view-display-id-node_content_7 .views-row-odd, .view-display-id-node_content_7 .views-row-even {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+width: 48%;
+}
+.view-display-id-node_content_7 .views-row-even {
+margin-right:0
+}
+/* mobile menu */
+#header h2.logo a{
+	background: url("../img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-size: 40px 40px;
+	width:100%;
+	margin:0;
+}
+/* show hide */
+.mobile-hide {
+	display: none;
+}
+.mobile-show {
+	display: block;
+}
+/* ACCOMMODATION */
+ul#accom_nav  {
+	display: none; 
+}
+#block-block-14 { /* accom deals */
+	display: none;
+}
+.capsule-bg .mobile-data{
+padding: 0;
+}
+.mobile-image {
+		display: inline;
+		float:left;
+		width:56.75%;
+		margin-right: 3.8%;
+}
+.mobile-data {
+		display: inline;
+		float:left;
+		width: 39.45%;
+}
+/*scroll on touch screen*/
+.touchscroll {overflow-x: scroll!important; -webkit-overflow-scrolling:touch!important;}
+/*webform*/
+#webform-client-form-227 .form-item label, #webform-client-form-235 .form-item label, #webform-client-form-3859 .form-item label,
+#webform-client-form-235 .form-type-checkbox {
+float: none;
+display: block;
+}
+#webform-client-form-227 input#edit-mollom-captcha, #webform-client-form-235 input#edit-mollom-captcha,
+#webform-client-form-227 input#edit-submit, #webform-client-form-235 input#edit-submit {
+margin-left: 0;
+}
+#webform-client-form-227 textarea, #webform-client-form-235 textarea , #webform-client-form-3859 textarea {
+width: 280px;
+}
+/*availibility submit*/
+.block-availability_search #edit-submit--2 {
+margin-top: 0!important;
+float:none;
+}
+#block-block-7 .form-item /*, .block-availability_search .form-item, .view-all-niskeo-accommodation .form-item*/ {
+padding: 0 0 0 0;
+}
+#edit-n-wrapper {
+height: 60px;/* added to force the button below the check in input */	
+}
+/*holiday booking overides */
+#webform-client-form-3859 #webform-component-pid .form-item select.form-3859 {
+float: none;
+display:block;
+margin-left: 0;
+margin-top: 10px;
+}	
+#copyright, #back-to-top{ float: right; width: 100%; text-align: right;}
+/* site map */
+#site-map .site-map-menus .site-map-box {
+width:100%;
+}
+}
+@media only screen and (max-width: 567px) {	
+.views-exposed-form input.form-submit, #block-multiblock-2 #edit-submit-1, #block-multiblock-6 #edit-submit--2, #block-multiblock-5 #edit-submit--2, #edit-submit-all-niskeo-accommodation {
+ 	width: 100%;
+}
+.views-exposed-form input.form-submit, #block-multiblock-2 #edit-submit-1, #edit-submit-all-niskeo-accommodation {
+	margin-top: 0 !important;
+}
+}
+@media only screen and (max-width: 460px) {
+/*  #search elements
+================================================== */
+#block-multiblock-1 .content, #block-multiblock-2 .content,  #block-multiblock-5 .content, #block-multiblock-6 .content, .view-all-niskeo-accommodation .view-filters {
+padding:0;
+width:100%;
+}
+/*.views-exposed-form .views-exposed-widget, #block-multiblock-2 .views-exposed-form .views-exposed-widget, #block-multiblock-1 .views-exposed-form .views-exposed-widget {
+padding: 0 0 0;
+}*/
+/*overides for view form for search modules line 142 >   */
+.views-exposed-form .views-exposed-widget, #block-multiblock-1 .form-item, #block-multiblock-2 .form-item, #block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item  {
+padding: 0;
+width: 32%;
+}
+.views-exposed-form .views-submit-button { /*overide for button .views-exposed-form */
+width: 100%;
+}
+#block-multiblock-2 #views-exposed-widget-guest, #block-multiblock-1 #views-exposed-widget-guest, #block-multiblock-6 #edit-ciu-wrapper, #block-multiblock-5 #edit-ciu-wrapper {
+width: 36%;
+}
+/* homepage "MAIN" deals */
+.view-deal .views-row-odd, .view-deal .views-row-even {
+width: 100%;
+}
+.view-Explore-Niseko .views-row-even .switch-text {
+margin-right: 0;
+}
+#edit-n-wrapper {
+height: 40px;
+}
+.compact-form-label {
+font-weight: normal;
+top: 12px;
+}
+}
+@media handheld, only screen and (max-width: 320px) {
+.capsule-bg .mobile-data{
+padding: 0 5px;
+}
+.mobile-image, .switch-img {
+display:inline;
+width:100%;
+}
+.mobile-data, .switch-text  {
+display: inline;
+width: 100%;
+}
+}
