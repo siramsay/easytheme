@@ -101,7 +101,16 @@ width :100%;
 .inner-touchscroll { min-width:550px; }
 
 
-/***** hero ***/
+/**
+ * hero image
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ */
 #homepage_1 h2, #homepage_2 h2,
 .hero_title, .hero_subtitle, .view-header h2 {
 color:#fff;
