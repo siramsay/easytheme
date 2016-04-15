@@ -6,9 +6,21 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans); /*font-family: 'Open Sans', sans-serif;*/
 /*@import url(http://fonts.googleapis.com/css?family=Noto+Serif); font-family: 'Noto Serif', serif;*/
 /*@import url(http://fonts.googleapis.com/css?family=Merriweather:300); /*font-family: 'Merriweather', serif;*/ 
+
+/* CSS Resets NOTE ******** some of these reset are overiding screen values - todo: add responsive css before screen */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%} 
+
+/**
+ * colour palette can be used for sass later 
+ * hn green #00843d   
+ * green-grey #879090;
+ */
+
 html {
 background-color: #f3f3f3;
+box-sizing:border-box;	
 }
+
 body {
 margin:0;
 padding:0;
@@ -99,8 +111,6 @@ margin-bottom: 40px;
 width :100%;
 }
 .inner-touchscroll { min-width:550px; }
-
-
 /**
  * hero image
  *
@@ -111,18 +121,22 @@ width :100%;
  * documentation. It can include example HTML, URLs, or any other information
  * that is deemed necessary or useful.
  */
-#homepage_1 h2, #homepage_2 h2,
-.hero_title, .hero_subtitle, .view-header h2 {
+.hero {
+background-position: center top;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+height: 500px;
+width: 100%;
+}
+.hero_title, .hero_subtitle {
 color:#fff;
 text-shadow: #2A2A2A 1px 1px;
-font-size: 240%;
-font-weight:900;
 margin-bottom: 0;
 }
-#homepage_2 h2{
-	color:#000;
-}
 .hero_title {
+font-size: 240%;
+font-weight:900;
 margin-left: 3.8%;
 }
 .hero_subtitle {
@@ -130,7 +144,7 @@ font-size: 180%;
 font-weight:400;
 margin-left: 7.8%;
 }
-/**** button */
+/* Button */
 button, input[type="submit"], input[type="reset"], input[type="button"], input.form-submit, a.button, a.button-reverse {   /*.button,*/
 -webkit-appearance: none;
 -moz-border-bottom-colors: none;
@@ -165,7 +179,11 @@ background-color: #FFCCCC;
 .ui-tabs .ui-tabs-hide {
      display: none;
 }
-/********************************************************************************************************* header */
+/**
+ * Header element style
+ *
+ * includes navigations,logo and search 
+ */
 #headertitle h1 {	
 font-style: italic;
 color: #fff;
@@ -173,8 +191,8 @@ font-size: 120%;
 font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 font-weight:100;
 }
-.header{
-background-color:#00843d;
+#header{
+background-color:rgba(251,251,51,0.2);
 }
 .filler {
 background-color:rgba(0,0,0,.2); /*rgba(0,0,0,.2); yel255, 255, 51, 0.2  red255,007,007;*/
@@ -219,7 +237,7 @@ background-repeat: no-repeat;background-image:url(../img/ja.png);
 color:#fff;
 font-size: 90%;
 }
-/************************************************************************************************** header nav */
+/* header nav */
 #menu-wrap ul.menu{
 width:100%;
 float:left;
@@ -239,7 +257,7 @@ position:relative;
 width: 20%;
 }
 #menu-wrap ul.menu a{
-color: #ffffff;
+color: #000000;
 display:inline-block;
 padding: 10px;
 font-size:95%;
@@ -248,14 +266,20 @@ font-size:95%;
 padding-left: 0;
 }
 #menu-wrap ul.menu a:hover{
-	/*color: #ff0033;*/
+/*color: #ff0033;*/
 }
 #menu-wrap ul.menu a:visited{
-color: #ffffff;
+color: #000000;
 }
 ul li.leaf {
     list-style:none;
 }
+/** 
+ * Search From 
+ *
+ * Styles for the search form
+ * Button image is added in the template.php
+ */
 #search_top {
 padding-top: 10px;
 padding-bottom:10px;	
@@ -284,7 +308,7 @@ padding: 5px 5px 5px 10px;
 #search-block-form input:focus { outline:0; }
 #search-block-form input.form-text { display: inline; width: 200px; height: 35px; border: none; font-size: 100%; padding: 0; margin: 6px 0 0 5px;; }
 #search-block-form input[type="submit"], #search-block-form  input.form-submit {
-/*background: none repeat-x scroll 0 0  rgba(0, 255, 54, .25);*/
+/* background: none repeat-x scroll 0 0  rgba(0, 255, 54, .25); */
 height: 40px;
 border-width: 0 ;
 border-radius: 0;
@@ -296,7 +320,7 @@ text-align: center;
 text-shadow: 0 1px 0 #FFFFFF;
 font-size:100%!important; /* added to enforce size in input */ 
 }
-/* footer  */
+/* Footer  */
 #footer{
 border-top: 1px solid #00843d;
 margin-top: 40px;
