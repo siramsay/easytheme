@@ -99,57 +99,8 @@ margin-bottom: 40px;
 width :100%;
 }
 .inner-touchscroll { min-width:550px; }
-/*BG colours / view overides */
-.capsule-bg {
-background-color:#ede9d7; /* f8f4f1   EBE6DC */
-margin-bottom:2em;	
-}
-.view-display-id-node_content_8 .views-row {
-margin-bottom: 20px;	
-}
-.view-deal .capsule-bg, .view-niseko-services .capsule-bg, .view-display-id-entity_view_7 .views-row-odd {
-background-color:#f8f4f1; /* f8f4f1   EBE6DC */	
-}
-.capsule-bg-transparent {
-background-color:transparent;	
-}
-.capsule-bg p, .eighty-seven p{
-font-size: 87.5%; /* 14px*/
-margin-top: 0;
-}
-.capsule-bg a, .capsule-bg .a, .view-display-id-node_content_8 .a{
-color: #2a2a2a;
-font-size: 100%;
-}
-.capsule-bg .a {
-/*font-weight:bold;	*/
-}
-.capsule-bg .mobile-data {
-padding: 0 5px;
-}
-.page-niseko-services .capsule-bg .mobile-data {
-height: 120px;
-}
-.service-pdf {
-background-color:transparent;
-height:280px;
-background-image:url(../img/hn_services_PDF.png);
-background-repeat:no-repeat;
-background-position: 10px 40px;
-margin-bottom:10px;
-z-index:100;
-margin-top: 0;
-overflow:visible;
-bottom: 0;
-left:0;
-}
-.image-overlay-title a {
-color: #ffffff;
-font-size: 100%;
-text-shadow: #2A2A2A 1px 1px;
-font-size: 120%;
-font-weight:400;
-}
+
+
 /***** hero ***/
 #homepage_1 h2, #homepage_2 h2,
 .hero_title, .hero_subtitle, .view-header h2 {
@@ -380,28 +331,8 @@ font-size:80%;
 float: right; 
 }
 /* END LAYOUT 
-/* p high light */	
-.about .field-name-field-homepage-about-us {
-/*color: #879090;*/
-font-size: 110%;
-}
-.front .about .field-name-field-homepage-about-us {
-/*color: #879090;*/
-margin: 0 0 0 40px;
-}
-/* FAQ*/
-.views-accordion {
-width: 100%;
-}
-.views-accordion-item .accordion-content div, .views-accordion-item .accordion-header, h3.accordion-header {
-padding: 0.5em 2em;
-}
-.accordion-header {
-background: url("../img/Q.gif") no-repeat scroll 0 5px rgba(0, 0, 0, 0)!important;
-}
-.accordion-header span.field-content {
-margin-left: 0; 
-}
+
+
 /* D7 */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 background-image: none;
@@ -412,21 +343,8 @@ background-color: #ffffff;
 .mobile-show {
 display: none;
 }
-/* transfers h2, feildsets */
-.field-name-field-transfer-type, .field-name-field-transfers-type-2, .field-name-field-transfers-type-3, .field-name-field-transfers-type-4, .field-name-field-transfers-type-5, .field-name-field-transfers-type-6 {
-margin-bottom: 5px;
-margin-top: 20px;
-font-size: 130%;
-font-weight: 100;
-color: #2A2A2A;
-}
-.field-field-hero-image, .field-field-hero-headline, .field-field-hero-headline-2, .field-field-hero-toggle {
-display: none; 
-}
-.node-type-niseko-transfers fieldset {
-border:none;
-padding:0;	
-}
+
+/* feildsets - use on transfer pages*/
 html.js fieldset.collapsible legend {
 background-color: #f8f4f1;
 width: 100%;
@@ -443,6 +361,7 @@ html.js fieldset.collapsed legend a{
 background: url("../img/icons/collapsed.png") no-repeat scroll 0 75% rgba(0, 0, 0, 0);
 padding-left: 25px;
 }
+
 /*accom deals link*/
 #block-block-14 {
 margin: 40px 0 0 100px;
@@ -453,55 +372,7 @@ color: #55AC40;
 font-size: 200%;
 margin-top: 0;
 }
-/* types */
-/* .firstlevel_mid .top{ stars 
-	height:33px;
-	background-repeat:no-repeat;
-	background-position:right;
-}
-.firstlevel_mid .topA{ background-image:url(../img/icons/Astar.png);}
-.firstlevel_mid .top2{ background-image:url(../img/icons/2star.png);}
-.firstlevel_mid .top3{ background-image:url(../img/icons/3star.png);}
-.firstlevel_mid .top4{ background-image:url(../img/icons/4star.png);} */
-/*advanded search page */ 
-.star9, .star8, .star7, .star6 {
-background-repeat:no-repeat;
-height: 50px;
-width: 120px;
-}
-.star9{ background-image:url(../img/icons/Astar.png);}
-.star8{	background-image:url(../img/icons/2star.png);}
-.star7{	background-image:url(../img/icons/3star.png);}
-.star6{	background-image:url(../img/icons/4star.png);}
-/*
-2nd level */
-#accom_nav  {
-float:left;
-margin: 0 0 30px 0;
-}
-#accom_nav li{
-padding: 20px;
-float:left;
-display:inline; 	
-}
-#accom_nav li:first-child{padding: 20px 20px 0 0;
-}
-ul#accom_nav li a{
-height: 25px;
-float:left;
-display:inline-block;
-margin: 0;
-}
-ul#accom_nav li a:first-child{
-padding: 20px 0 0 0;
-}
-ul#accom_nav li a:hover{
-color: #333;
-}
-/* hotel page = maybe change to same color as about. p*/ 
-.view-bb-accommodation div.view-header p{
-color:#999999;
-}
+
 /* deals */
 /* grouped deals */
 .node-type-campaigns-grouped .block-block, .node-type-deals-page .block-block, #block-block-16, #block-block-17 { /*for sidebar blocks to clear it, could be addded to responsive*/
@@ -531,6 +402,7 @@ width: 100%;
 	display: inline;
 	width: 100%;
 }
+
 /* testimonals */
 .test, .test2 {
 	/*font-family: 'Merriweather', serif;*/
@@ -564,473 +436,23 @@ p.quoteme:first-letter { /*div.test p.quoteme:first-letter, div.test2 p.quoteme:
 	color: rgba(110, 135, 110, .8);
 	font-size: 87.5%;
 }
-/*property*/
-#overview {
-    position: relative;
-}
-#overview_inner {
-    /*background: white;
-    height: 15em;*/
-    overflow: hidden;
-    border: 0 solid transparent;
-    border-width: 10px 0;
-}
-#overview_inner:after {
-content: '';
-position: absolute;
-left: 0;
-right: 0;
-height: 90px;
-bottom: 0;
-background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));    
-}  
-.prop_right ul, .page-node-305 .content ul, .page-node-153 .content ul { /*d6  class < #node-153 ul  management and tranfers pages*/
-margin-left: 1em;
-list-style: circle outside none;
-}
-.plans-icon, .bgcolor {
-background-color: rgb(240,238,230);
-}
-.plans-icon h3 {
-margin-left: 25px;
-padding: 7px;
-}
-#LO h3 {
-padding: 7px;
-}
-.plans-pointer {
-cursor:pointer;
-background: url(../img/icons/collapsed.png) no-repeat scroll 5px 55% rgb(240,238,230);
-}
-.plans-pointer-c {
-background: url(../img/icons/collapsible.png) no-repeat scroll 0 55% rgb(240,238,230);
-}
-#propicons {
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-#propicons li { 
-	float: left;
-	text-indent:-9999px;
-	display: block;
-	height: 72px;
-	padding: 0 3px 0 0;
-	position: relative;
-	width: 72px;
-}
-#propicons li a {
-	display: block;
-	height: 72px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 72px;
-}
-#propicons li.tel a {background: url(../img/propicon/property-sprites.png) no-repeat -72px -72px;}/* telephone.gif */ 
-#propicons li.was a {background: url(../img/propicon/property-sprites.png) no-repeat 0 0;} /* washing-machine.gif */
-#propicons li.dry a {background: url(../img/propicon/property-sprites.png) no-repeat -72px 0 ;}/*dryer.gif*/
-#propicons li.jac a {background: url(../img/propicon/property-sprites.png) no-repeat 0 -144px;}/*jacuzzi.gif*/
-#propicons li.veh a {background: url(../img/propicon/property-sprites.png) no-repeat 0 -216px;}/*vehicle.gif*/
-#propicons li.mic a {background: url(../img/propicon/property-sprites.png) no-repeat -144px 0;}/*microwave.gif*/
-#propicons li.cds a {background: url(../img/propicon/property-sprites.png) no-repeat -72px -144px;}/*cd-stereo.gif*/
-#propicons li.dvd a {background: url(../img/propicon/property-sprites.png) no-repeat -72px -216px;}/*dvd.gif*/
-#propicons li.dis a {background: url(../img/propicon/property-sprites.png) no-repeat -216px 0;}/*diswasher.gif*/
-#propicons li.wir a {background: url(../img/propicon/property-sprites.png) no-repeat -216px -72px;}/*wireless.gif*/
-#propicons li.int a {background: url(../img/propicon/property-sprites.png) no-repeat -144px -72px;}/*internet.gif*/
-#propicons li.bun a {background: url(../img/propicon/property-sprites.png) no-repeat -144px -144px;}/*bunks.gif*/
-#propicons li.ipo a {background: url(../img/propicon/property-sprites.png) no-repeat 0 -72px;}/*ipod.gif*/
-#propicons li.dryr a {background: url(../img/propicon/property-sprites.png) no-repeat -144px -216px;}/*dryroom.gif*/
-/* unit data */
-.node-type-property .view-title {
-	color: #7DC817;
-    font-weight: 100;
-	}
-/* unit data*/
-.node-type-property table {
-	width: 100%;
-	background-color:#fff;
-}
-.node-type-property tbody {
-	font-size:87.5%;
-}
-.node-type-property tr.even, tr.odd {
-    background-color: #fff;
-    border-bottom: 1px solid #CCCCCC;
-    padding: 0.1em 0.6em;
-}
-.node-type-property tr.even{
-   /* background-color: #f1f1f1;*/
-}
-.views-field-field-unit-sleeps-max-value, .views-field-field-unit-bedroom-value, .views-field-field-unit-bathroom-value, .views-field-field-unit-sqm-value, .views-field-field-unit-sq-ft-value, .views-field-field-unit-jacuzzi-value {
-	text-align: center;	
-}
-/* elastic video embed iframe */
-.video-container {
-	clear: both;
-    float: none;
-    height: 0;
-    padding-bottom: 67.25%; /*56.25%*/
-    padding-top: 25px;
-    position: relative;
-    width: 100% !important;
-}
-.video-container iframe,  
-.video-container object,
-.video-container embed,
-.video-container-2
-	{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%!important;
-	height: 101%!important;
-	outline: 0;
-}
-/*.video-container #album-110 {  ADDED BY js
-	height: 100%!important;
-	width: 100%!important;
-}*/
-/* HEIGHT CHNAGED for IMG  mar 3 - stretched the place holder IMG */
-.video-container #album-110 img {
-	height: auto!important;
-	width: 100%!important;
-}
-.ssp-mobile-poster-background {
-	height: auto!important;
-}
-.ssp-mobile-poster-content {
-/* Parent div of content underneath image */ 
-	width: 100%!important;
-	top: 50px!important;
-	border: 0 none;
-    bottom: auto;
-    font-weight: normal;
-    height: 32px;
-    left: 25px;
-    line-height: 1em;
-    margin: 0;
-    opacity: 1;
-    padding: 0;
-    position: absolute;
-    right: auto;
-    text-align: left;
-    text-transform: none;
-    top: 493px;
-    width: 698px;
-    z-index: 2;
-}
-.ssp-mobile-poster-content img {
-/* added
-	width: 900px!important;*/
-}
-.ssp-mobile-poster-label {
-/* "Media Gallery" text */ 
-}
-.ssp-mobile-poster-title {
-color:rgba(0, 132, 61, 1)!important;
-background-color:rgba(255, 255, 255, .7)!important;
-border: 0 none;
-bottom: auto;
-font-family: 'Open Sans', sans-serif;
-font-size: 24px;
-font-weight: bold;
-left: 0;
-line-height: 1em;
-margin: 0;
-padding: 4px;
-position: absolute;
-right: auto;
-text-align: left;
-top: 0;;   
-}
-.ssp-mobile-poster-description {
-/* Album and gallery description */ 
-}
-.ssp-mobile-poster-button {
-background-color: rgba(0, 132, 61, 1)!important;
-color:#ffffff!important;
-border: 0 none;
-bottom: auto;
-display: inline;
-font-family: 'Open Sans', sans-serif;
-font-size: 9px;
-font-weight: normal;
-left: auto;
-letter-spacing: 0.13em;
-line-height: 1em;
-margin: 0;
-padding: 3px 4px;
-position: absolute;
-right: 10px;
-text-align: left;
-text-transform: uppercase;
-top: 10px;
-z-index: 3;
-}
-/* weather */
-table.weather {
-	border: 1px solid #999999;
-	border-collapse:collapse;
-	font-size:90%;
-	background-color: #ffffff;
-	margin: 0;
-	width: 100%;
-	}
-table.weather td {
-	width: 36px;
-	border-right:1px solid #999999;
-}
-table.weather td.lrgtxt {
- 	font-size: 120%;
-	text-align:center;
-	}
-table.weather td.medtxt {
- 	font-size: 80%;
-	text-align:center;
-	}
-table.weather td.smltxt {
- 	font-size: 80%;
-	text-align:center;
-	}
-table.weather td img {
-    width: 36px;
-}
-/* forms for search and availibility*/
-input.form-autocomplete,
-input.form-text,
-textarea.form-textarea,
-select.form-select {
-  margin-top: 5px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  /*border-top-color: #999;*/
-  background: #fff;
-  color: #333;
-}
-input.form-text:focus,
-textarea.form-textarea:focus,
-select.form-select:focus {
-  color: #000;
-  border-color: #ace;
-}
-/*  #search elements
-================================================== */	
-#block-multiblock-1 .content, #block-multiblock-2 .content,  #block-multiblock-5 .content, #block-multiblock-6 .content, .view-all-niskeo-accommodation .view-filters  {
-	margin-bottom: 20px;
-	background-color:rgba(26, 20, 13, 0.8);
-	padding: 5px 2.5%;
-	display:inline-block;
-	width: 95%;
-}
-#block-multiblock-5 .content, #block-multiblock-6 .content {
-	background-color:rgba(3, 133, 66, 0.8);
-}
-#block-multiblock-1 .form-item, #block-multiblock-2 .form-item, #block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item {
-    float: left;
-    padding: .5em 1em 0 0;
-	margin-top: 0; /*only works on avail module*/
-	margin-bottom: .5em;
-	border: 0;
-}
-/* */
- #block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item  {
-    padding: 0.5em 0 0;
-    width: 24%;
-}
-.views-exposed-form .views-exposed-widget, .views-exposed-form .views-submit-button { /*override for submit button on above css*/
-	padding: 0 0 0;
-	width: 24%;
-}
-.views-exposed-form .views-submit-button {
-	width: auto;
-	float:right;
-}
-/*date picker input*/
-#block-multiblock-5 input.form-text, #block-multiblock-6 input.form-text {
-	padding: 6px;
-}
-/*
-// availablity module #block-multiblock-1 .form-item, #block-multiblock-2 .form-item, #block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item*/
-#block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item {
-    margin-bottom: 0;
-    /*float: left;
-	margin-top: 0;
-    padding: 0.5em 1em 0 0;*/
-}
-.views-exposed-widgets { /* browse our properties*/
-    margin-bottom: 0;
-}
-input.form-text:focus,
-textarea.form-textarea:focus,
-select.form-select:focus {
-  	color: #000;
-  	border-color: #ace;
-}
-#views-exposed-form-all-niskeo-accommodation-block label, .form-item-n label, .form-item-g label, #views-exposed-form-all-niskeo-accommodation-page-1 label {
-  display:none;
-  margin-top:-30px;
-} /*d6 id replaced by class #edit-n-wrapper #edit-g-wrapper*/
-/* http://css-tricks.com/dropdown-default-styling
-#views-exposed-form-all-niskeo-accommodation-page-1 select, #edit-n-wrapper select, #edit-g-wrapper select {
-  border: 0;
-  font-size: 85%;	
-}
-*/
-.compact-form-label {
-    /*color: #006633;*/
-    top: 17px;
-	font-weight:normal;
-}
-/*.views-exposed-form input.form-submit, availability #edit-submit-1 #4 #3, a.button {*/
-#block-multiblock-5 #edit-submit--2, #block-multiblock-6 #edit-submit--2, #edit-submit-all-niskeo-accommodation {
- 	padding: 4px 0.8em 5px;
- 	width: auto;
-	cursor:	pointer;
-	float: right;
-	margin-top: .5em!important;	
-}
-.views-exposed-form label {
-color: #fff;
-font-style:normal;
-}
-/*.views-exposed-form input.form-submit, availability #edit-submit-1 #4 #3
-.views-exposed-form input.form-submit, #block-multiblock-5 #edit-submit-1, #block-multiblock-6 #edit-submit-1 { 
-margin-top: .5em!important;
- }*/
-.views-exposed-form .views-exposed-widget .form-submit{ 
-margin-top: 1em!important;
- }
-input#edit-field-blurb-value {
-display:none;
-}
-.views-widget-filter-field_sleeps_value_many_to_one label{
-display:none;
-}
-.views-widget-filter-field_bedrooms_value_many_to_one {
-display:none;	
-}
-.views-widget-filter-term_node_tid_depth {
-display:none;	
-}
+
+
 /*************************************************************************************************   profiles / users pages  */
 body.section-users div.profile, body.section-users div#wrapper{
 background-color:#fff;
 margin: 10px 0 0 0;
 padding: 2px;
 } 
-iframe.imce-frame {
-width: 100%!important;
-}
+
 .admin a {
 background-color:#ddd;
 border: 1px solid #bbb;
 padding: 0 1em;
 text-transform:capitalize;
 }
-/* webform screen*/ 
-input#edit-submitted-deal-info-property {
-border: none;
-background-color: inherit;	
-}
-#webform-client-form-227 fieldset, #webform-client-form-235 fieldset, #webform-client-form-3859 fieldset  {
-	border: 0;
-	padding:0;
-	display:block;
-} 
-#webform-client-form-227 legend, #webform-client-form-235 legend, #webform-client-form-3859 legend {
-	padding: 0;
-	display: block;
-	color: #666666;
-	background: none repeat scroll 0 0 #DBDBDB;
-	margin-bottom: 15px;
-	margin-top: 15px;
-}
-#webform-client-form-227 div.webform-component, #webform-client-form-235 div.webform-component {
-	margin-top:20px;
-	}
-#webform-client-form-227 .form-item label, #webform-client-form-235 .form-item label, #webform-client-form-3859 .form-item label,
-#webform-client-form-235 .form-type-checkbox, input.form-checkbox {
-  	display: inline;
-  	font-weight: bold;
-  	float: left;
-  	margin-right: 1em;
-  	position: relative;
-  	width: 11em;
-	color: #666666;
-	}
-input.form-checkbox  {
-	width: 1em;
-	float:left;
-	display:inline;
-}
-.form-item-submitted-options-check-if-required-lift-passes, .form-item-submitted-options-check-if-required-transfers { 
-	width: auto!important;
-}
-
-#webform-client-form-235 .webform-component-property-typef--property-type .form-item label.option,
-#webform-client-form-235 .webform-component-checkboxes .form-item label.option {
-  	width: auto;
-	font-weight: normal;
-	margin-left: 2em;
-	}
-#webform-client-form-235 .webform-component-checkboxes .form-item label {
- 	width: auto;
-	font-weight: bold;
-	}	
-#webform-client-form-227 textarea, #webform-client-form-235 textarea , #webform-client-form-3859 textarea {
-	 width: 300px;
-	}
-#webform-client-form-227 .grippie, #webform-client-form-235 .grippie, #webform-client-form-3859 .grippie {
-margin-left: 11em;
-}
-#webform-client-form-227 input#edit-mollom-captcha, #webform-client-form-235 input#edit-mollom-captcha,
-#webform-client-form-227 input#edit-submit, #webform-client-form-235 input#edit-submit {
-margin-left: 14em;
-}
-#webform-client-form-227 div.description, #webform-client-form-235 div.description {
-margin-left: 13em;
-}
-#webform-client-form-235 fieldset#webform-component-property-typef div.description {
-margin-left: 0;
-}
-#webform-client-form-235 div.description p{
-display: block;
-position: relative;
-}
-#webform-component-personal-details--email-address .email, #edit-submitted-personal-details-email-wrapper .email, #webform-component-personal-details--email .email {
-color: #000!important;
-}
-/* holiday booking form
-<div id="webform-component-pid" class="webform-component webform-component-select">
-<div id="edit-submitted-pid-wrapper" class="form-item">
-<label for="edit-submitted-pid">Property: </label>
-<select id="edit-submitted-pid" class="form-select form_3859" disabled="disabled" name="submitted[pid]">
-</div>
-</div>
-*/
-#edit-submitted-pid-wrapper {width: 500px; overflow:hidden;}
-#webform-client-form-3859 .webform-component-select #edit-submitted-pid {width: 300px; overflow:hidden; }
-#webform-client-form-3859 #webform-component-pid .form-item select.form-3859 {
--webkit-appearance: none!important;
--moz-appearance: none!important;
-appearance: none!important;
-padding: 5px 30px 5px 5px!important;
-border: none!important;
-background-color:#f3f3f3;
-display:inline!important;
-width: 120%;
-float:left;
-margin-left: 12em;
-margin-top: -20px; 
-}
-#webform-client-form-3859 #edit-submitted-checkin-text, #webform-client-form-3859 #edit-submitted-checkout-text, #webform-client-form-3859 #edit-submitted-nights, #webform-client-form-3859 #edit-submitted-guests  {
-padding: 5px 30px 5px 5px!important;
-border: none!important;
-background-color:inherit;		
-}	
-/* explore niseko */
+	
+/* switch layout AKA explore niseko */
 .view-Explore-Niseko .views-row {
 margin-bottom: 40px;
 }
@@ -1064,6 +486,7 @@ margin-right: 3.8%;
 body.section-our-mountain p, body.section-explore-niseko p, body.section-winter-niseko p, body.section-summer-niseko p{
 margin-right:60px;
 }
+
 /* site map */
 #site-map .site-map-menus .site-map-box {
 display: inline;
@@ -1117,6 +540,7 @@ line-height:1.8;
 	color:#fff;
 	margin-top: 0;
 }
+
 /* deal lead capture */
 .para div {
 padding: 20px 10px;
@@ -1133,103 +557,14 @@ display: none;
 .rbiframe iframe {
 height: 100px;
 }
-/* skype */
-span.skype_pnh_container {display:none !important;}
-span.skype_pnh_print_container, span[class^="skype_pnh_print_container"] {display:inline !important;}
-/*tool tips*/
-a.tooltip {
-position: relative;
-text-decoration: none;
-border-bottom: 0;
-cursor: pointer;
-}
-a.tooltip span  {
-display: none;
-}
-a.tooltip:hover {
-z-index: 100;
-background: transparent; /* must be set for ie6 */
-text-decoration: none;
-}
-a.tooltip:hover span {
-display: block;
-position: absolute; 
-top: 50px;
-left: 0;
-width: 200px;
-padding: 0.3em;
-text-align: center;
-background: #ffd;
-border: 1px solid black;
-color: black;
-text-indent:0;
-text-transform:none;
-}
 
 /*d7 new */
 .field-name-body {
 margin-bottom: 40px;
 }
 
-/* ***********/
-.field-type-fivestar, #edit-field-reviews-service {
-margin-top:	20px;
-}
-/*.fivestar-static-form-item .form-item, .fivestar-form-item .form-item{
-    margin: 30px 0 0;
-}*/
-.fivestar-form-item label{
-    margin: 30px 0 0 0;
-}
 
-#edit-field-reviews-last-name, #edit-field-reviews-country, .page-node-add .SnapABug_Button {
-display: none;	
-}
-
-.page-node-add #header h2.logo a {
-margin: 0 0 10px 0;	
-}
-
-/*entity template */
-.view-display-id-entity_view_1 .review-name{
-    display: inline-block;
-    white-space: nowrap;
-    width: 100%;
-	margin-bottom: 2em;
-}
-.view-display-id-entity_view_1 .review-name-name {
-padding-right: 5px;
-max-width: 100%;
-display:inline-block;
-}
-.view-display-id-entity_view_1 .review-name-tick {
-margin-right: 5px;
-background: url("../img/icons/verified_reviews_tick.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-width: 20px;
-height:20px;
-display:inline-block;
-}
-
-
-
-.view-display-id-entity_view_1 .review-body {
-	border-style: solid; border-width: 1px; border-color:#000000; padding:0.4em; border-radius:1em; margin-top:-1em;}
-
-
-.view-display-id-entity_view_1 .review-body .clearfix:after {
-clear: none;
-}
-
-.view-display-id-entity_view_1 .review-body .form-item, .form-actions {
-margin-bottom: 0;
-margin-top: 0.5em;
-}
-.fivestar-static-item .fivestar-widget-static .star { margin-top:.5em;}
-
-.view-display-id-entity_view_1 .view-header{
-margin-bottom: 1em;
-}
-
+/* not publised */
 .False {
 background-color: #fff1f1;
 -webkit-transition-property: background-color;
@@ -1245,18 +580,3 @@ transition:background-color 2s ease 2s;
 .False:hover {
 background-color: #ffd2d2;
 }
-
-.review-bg {
-margin-bottom: 2em;
-}
-
-.review-bg .b {
-font-size: 150%;
-font-weight:100;
-padding-right:50px;
-}
-
-.verifiedreviews {
-float:left; display:inline; width: 40%; padding-left:50px; background: url("../img/icons/verified_reviews.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);	
-}
-
