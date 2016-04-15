@@ -6,14 +6,17 @@ core = 7.x
 engine = phptemplate
 
 #screenshot = img/screenshot.png
-#regions[search_top] = search top
+
+regions[search_top] = search top
+regions[sidebar_first] = left sidebar?
+regions[sidebar_second] = content right sidebar
+regions[content] = content
+
 #regions[content_top_a_1] = content top a:1
 #regions[content_top_a_2] = content top a:2
 #regions[content_top_b_1] = content top b:1
 #regions[campaign_links] = campaign links
-#regions[content] = content
 #regions[content_below] = content below
-#regions[right] = right sidebar
 #regions[node_top] = node top
 #regions[node_bottom] = node bottom
 #regions[help] = Help

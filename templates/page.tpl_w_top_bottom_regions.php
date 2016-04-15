@@ -154,9 +154,7 @@
 
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-      <strong> THIS IS ABOVE THE CONTENT $page rneder in the page tpl</strong>
-	  <?php print render($page['content']); ?>
-      <strong> THIS IS BELOW THE CONTENT $page rneder in the page tpl</strong>
+      <?php print render($page['content']); ?>
     </section> <!-- /#main -->
 
   	<?php if ($page['sidebar_second']): ?>
