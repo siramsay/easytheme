@@ -29,7 +29,6 @@ engine = phptemplate
 #features[] = primary_links
 #features[] = secondary_links
 
-
 stylesheets[all][] = css/responsive.css
 stylesheets[all][] = css/screen.css
 #stylesheets[all][] = css/screen.css
@@ -37,6 +36,7 @@ stylesheets[all][] = css/screen.css
 #stylesheets[all][] = css/admin.css
 #stylesheets[all][] = css/availibilty
 
+scripts[] = js/modernizr-custom.js
 #scripts[] = js/html5.js
 #scripts[] = js/jquery.responsify.js
 #scripts[] = js/jquery.autofill.js
