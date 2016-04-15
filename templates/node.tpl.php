@@ -130,11 +130,11 @@ print render($hero1);
 <?php endif; ?> 
 
 
-  <div class="row content"<?php print $content_attributes; ?>>
+  <div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
     
      <?php if ($page): ?>
   <?php if (!empty($content['links'])): ?>
-    <div class="links admin">
+    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;">
       <?php print render($content['links']); ?><!--<br /><br />-->
     </div>
   <?php endif; ?>

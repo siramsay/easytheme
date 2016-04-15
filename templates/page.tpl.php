@@ -94,10 +94,16 @@
 
 <div class="clearfix navigation">
 <div id="mob-menu">
-         <?php 
-            $main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
-          	print drupal_render($main_menu_tree);
-        ?>
+<!-- test ul -->
+<ul class="links">
+<li class="last">test links - to be remove</li>
+</ul>
+
+<?php 
+$main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
+print drupal_render($main_menu_tree);
+?>
+
 </div>
 </div>
     
@@ -106,37 +112,22 @@
 
 <!--
 <div id="" class="container clearfix">  content wrapper -->
- 
-
- <div id="" class="row clearfix">
-    <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last']) : ?>
-    <div id="preface-wrap" class="clearfix">
-      <div class="fourcol">
-        <?php print render ($page['preface_first']); ?>
-      </div>
-      <div class="fourcol">
-        <?php print render ($page['preface_middle']); ?>
-      </div>
-      <div class="fourcol last">
-        <?php print render ($page['preface_last']); ?>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <?php endif; ?> 
- </div><!-- END ROW -->
 
 <!-- remove row    
  <div id="" class="row clearfix">
  -->
-    
+    <div style="background-color:grey">
      <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+    </div>
+	
+    <!----- remove -->
+								<?php if ($page['sidebar_first']): ?>
+                                  <aside id="sidebar" role="complementary" class="clearfix">
+                                   <?php print render($page['sidebar_first']); ?>
+                                  </aside> 
+                                <?php endif; ?>
     
-	<?php if ($page['sidebar_first']): ?>
-      <aside id="sidebar" role="complementary" class="clearfix">
-       <?php print render($page['sidebar_first']); ?>
-      </aside> 
-    <?php endif; ?>
-    
+	
 	<?php if ($page['sidebar_second']): ?>
     <section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
     <?php else: ?>
@@ -144,21 +135,31 @@
     <?php endif; ?> 
      
       
-      <?php print $messages; ?>
+      <?php print $messages; ?> <!----- system messages -->
+      
+      
       <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
       <?php print render($title_prefix); ?>
       <?php if (!$is_front): ?>
 	  <?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
       <?php endif; ?>
+	  
+      
+      <div style="background-color:grey">
 	  <?php print render($title_suffix); ?>
 
       <?php print render($page['help']); ?>
-      <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-      <strong> THIS IS ABOVE THE CONTENT $page rneder in the page tpl</strong>
+      
+	  <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+      </div>
+      
+      <!--<strong> THIS IS ABOVE THE CONTENT $page rneder in the page tpl</strong>-->
 	  <?php print render($page['content']); ?>
-      <strong> THIS IS BELOW THE CONTENT $page rneder in the page tpl</strong>
+      <!--<strong> THIS IS BELOW THE CONTENT $page rneder in the page tpl</strong>-->
+      
     </section> <!-- /#main -->
 
+<!----- remove / move to node.tpl -->
   	<?php if ($page['sidebar_second']): ?>
       <aside id="sidebar" role="complementary" class="fourcol last clearfix">
        <?php print render($page['sidebar_second']); ?>
@@ -171,31 +172,6 @@
 <!-- remove row  
  </div><!--END ROW -->
 
- <div id="" class="row footer-wrapper clearfix"> 
-        
-       	<?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_fourth']): ?> 
-        
-          <!--<div id="footer-one">-->
-          <div class="threecol">
-            <?php print render ($page['footer_first']); ?>
-          </div>
-          <!--<div id="footer-two">-->
-          <div class="threecol">
-            <?php print render ($page['footer_second']); ?>
-          </div>
-          <!--<div id="footer-three">-->
-          <div class="threecol">
-            <?php print render ($page['footer_third']); ?>
-          </div>
-          <!--<div id="footer-four">-->
-          <div class="threecol last">
-            <?php print render ($page['footer_fourth']); ?>
-          </div>
-          
-          <div class="clear"></div>
-      
- 		<?php endif; ?>
- </div><!--END ROW -->
   		
  <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
         	
