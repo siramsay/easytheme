@@ -104,7 +104,7 @@
      <?php if ($page): ?>
   <?php if (!empty($content['links'])): ?>
     <div class="links admin">
-      <?php print render($content['links']); ?><br /><br />
+      <?php print render($content['links']); ?><!--<br /><br />-->
     </div>
   <?php endif; ?>
   <?php endif; ?>
@@ -120,6 +120,7 @@
   </div>
  
   <?php print render($content['comments']); ?>
+
 <?php if (!$page): ?>
   </article> <!-- /.node -->
 <?php endif; ?>
