@@ -99,7 +99,38 @@
       </header>
   <?php endif; ?>
 
-  <div class="content"<?php print $content_attributes; ?>>
+<!-- hero -->
+<!-- page -->
+<?php if (isset($node->field_hero_toggle['und'][0]['value']) && $node->field_hero_toggle['und'][0]['value'] == 1 ) : ?>   
+<div class="hero" style="background-image:url(
+<?php
+// field_video_image is the name of the image field
+
+// using field_get_items() you can get the field values (respecting multilingual setup)
+$field_hero_image = field_get_items('node', $node, 'field_hero_image');
+
+// after you have the values, you can get the image URL (you can use foreach here)
+$hero1 = file_create_url($field_hero_image[0]['uri']);
+
+print render($hero1); 
+
+?> )">
+        <div class="rowhero">
+        
+		<?php  if (isset($content['field_top_image_grouped_deals'])): ?>    
+		<div class="rowhero" style="background-image:url(<?php print render ($content['field_top_image_grouped_deals']); ?>); background-repeat:no-repeat;  height:300px;">
+        <?php else: ?> 
+		<div class="rowhero" style="height:300px;"> 
+		<br /><h2 class="hero_title"><?php print render ($node->field_hero_headline['und'][0]['value']); ?><?php print render ($node->field_campaign_headline['und'][0]['value']); ?></h2> 
+        <br /><h2 class="hero_subtitle"><?php print render ($node->field_hero_headline_2['und'][0]['value']); ?><?php print render ($node->field_campaign_headline_2['und'][0]['value']); ?></h2>
+        <?php endif; ?> 
+        </div> 
+        </div> <!-- END rowhero -->
+</div><!-- END hero -->        
+<?php endif; ?> 
+
+
+  <div class="row content"<?php print $content_attributes; ?>>
     
      <?php if ($page): ?>
   <?php if (!empty($content['links'])): ?>

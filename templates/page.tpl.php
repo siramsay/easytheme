@@ -104,12 +104,11 @@
 
 
 
-<div id="" class="container clearfix">
+<!-- 
+<div id="" class="container clearfix">  content wrapper -->
  
  
-  <div id="" class="row clearfix">
-    
-
+ <div id="" class="row clearfix">
     <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last']) : ?>
     <div id="preface-wrap" class="clearfix">
       <div class="fourcol">
@@ -123,12 +122,12 @@
       </div>
       <div class="clear"></div>
     </div>
-    <?php endif; ?>
+    <?php endif; ?> 
+ </div><!--END ROW -->
 
-   
-  </div><!--END ROW -->
-    
-    <div id="" class="row clearfix">
+<!-- remove row    
+ <div id="" class="row clearfix">
+ -->
     
      <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
     
@@ -167,10 +166,10 @@
     <div class="clear"></div>
     
    
+<!-- remove row  
+ </div><!-END ROW -->
 
-  </div><!--END ROW -->
-
-  		<div id="" class="row footer-wrapper clearfix"> 
+ <div id="" class="row footer-wrapper clearfix"> 
         
        	<?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_fourth']): ?> 
         
@@ -194,9 +193,9 @@
           <div class="clear"></div>
       
  		<?php endif; ?>
-    	</div><!--END ROW -->
+ </div><!--END ROW -->
   		
-        <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
+ <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
         	
             <div class="eightcol">
          	 	<?php print render($page['footer']); ?>
@@ -207,10 +206,10 @@
             	<?php print render($page['footer_right']); ?>
            
  			</div>          
-        </div><!--END ROW -->
+ </div><!--END ROW -->
         
         
-         <div id="footer-menu" class="row clearfix"  style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
+ <div id="footer-menu" class="row clearfix"  style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
         <?php 
 			 // https://www.drupal.org/node/1043018 How to print a menu in Drupal 7?
 		   	$menu = menu_navigation_links('secondary-menu');
@@ -225,9 +224,9 @@
 		    //$main_menu_tree2 = menu_tree(variable_get('secondary_links_source', 'secondary-menu'));
           	//print drupal_render($main_menu_tree2);
         ?>
-        	 </div><!--END ROW -->
+ </div><!--END ROW -->
         
-   		<div id="" class="row clearfix" style="margin-bottom: 40px;">
+ <div id="" class="row clearfix" style="margin-bottom: 40px;">
         
             <div id="back-to-top" class="clearfix" style="float:right;">
               <a href="#" class"top">back up ↑</a>
@@ -240,8 +239,8 @@
         
         
         
-        </div> <!--END ROW --> 
+  </div> <!--END ROW --> 
   
-  
-  </div>
-</div>
+ 
+<!-- container
+</div-->
