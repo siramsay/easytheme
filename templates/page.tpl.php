@@ -89,9 +89,10 @@
     </div>
  	   
 
-</header> <!--END ROW -->
+</header>
+<!--END ROW -->
 
-
+<!-- start mob menu -->
 <div class="clearfix navigation">
 <div id="mob-menu">
 <!-- test ul -->
@@ -103,30 +104,27 @@
 $main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
 print drupal_render($main_menu_tree);
 ?>
-
 </div>
 </div>
-    
-
-
+<!-- end mob menu -->
 
 <!--
 <div id="" class="container clearfix">  content wrapper -->
 
 <!-- remove row    
  <div id="" class="row clearfix">
- -->
+-->
+<!----- remove -->
+								<?php if ($page['sidebar_first']): ?>
+                                  <aside id="sidebar" role="complementary" class="clearfix">
+                                   THIS IS WHERE THE CAMPAIGN LINK ARE RENDERING<?php print render($page['sidebar_first']); ?>
+                                  </aside> 
+                                <?php endif; ?>
+
+
     <div style="background-color:grey">
      <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
     </div>
-	
-    <!----- remove -->
-								<?php if ($page['sidebar_first']): ?>
-                                  <aside id="sidebar" role="complementary" class="clearfix">
-                                   <?php print render($page['sidebar_first']); ?>
-                                  </aside> 
-                                <?php endif; ?>
-    
 	
 	<?php if ($page['sidebar_second']): ?>
     <section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
@@ -138,19 +136,18 @@ print drupal_render($main_menu_tree);
       <?php print $messages; ?> <!----- system messages -->
       
       
-      <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
       <?php print render($title_prefix); ?>
       <?php if (!$is_front): ?>
 	  <?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
       <?php endif; ?>
-	  
+	  <?php print render($title_suffix); ?>
       
       <div style="background-color:grey">
-	  <?php print render($title_suffix); ?>
+	  
 
-      <?php print render($page['help']); ?>
+      <?php print render($page['help']); ?>  help <!--- -->
       
-	  <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+	  <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul> links<?php endif; ?>
       </div>
       
       <!--<strong> THIS IS ABOVE THE CONTENT $page rneder in the page tpl</strong>-->
