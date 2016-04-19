@@ -66,29 +66,31 @@
 ?>
 <header id="header" class="clearfix">
     
-  	<div class="rowheader" >   
+<div class="rowheader" >   
     
-        <hgroup id="logo">
-          
-		  <?php if ($logo): ?>
-          <div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a>
-          </div>
-		  <?php endif; ?>
-          
-          <div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-          </div>
-        </hgroup>
-        
-        <nav id="navigation">
-         
-                <div id="menu-icon">&nbsp<?php print $site_name; ?> &#x2261; </div>
-                <?php print render($page['header']); ?>
-              
-        </nav>
-        
-    </div>
- 	   
+<hgroup id="logo">
+<!-- HNPM Specific -->        
+<h2 class="logo"><a href="#" title="Property management"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
 
+
+<!-- HNPM Specific END-->
+             
+<?php if ($logo): ?>
+<div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+<?php endif; ?>
+          
+<div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+</div>
+          
+</hgroup>
+        
+<nav id="navigation">        
+<div id="menu-icon">&nbsp<?php print $site_name; ?> &#x2261; </div>
+<?php print render($page['header']); ?>
+</nav>
+        
+</div>
+ 	   
 </header>
 <!--END ROW -->
 
@@ -145,7 +147,7 @@ print drupal_render($main_menu_tree);
       <div style="background-color:grey">
 	  
 
-      <?php print render($page['help']); ?>  help <!--- -->
+      <?php print render($page['help']); ?>  <!--- help  -->
       
 	  <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul> links<?php endif; ?>
       </div>
