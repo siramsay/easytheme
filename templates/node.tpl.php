@@ -103,7 +103,7 @@
  <?php if ($page): ?>
   <?php if (!empty($content['links'])): ?>
     <div class="links admin" style="background-color:#CCC; margin-bottom:20px;">
-      <?php print render($content['links']); ?>  add if campaign only on campaign page<!--<br /><br />-->
+      <?php print render($content['links']); ?>  <!--add if campaign only on campaign page<br /><br />-->
     </div>
  <?php endif; ?>
 <?php endif; ?>
@@ -129,9 +129,11 @@ print render($hero1);
 <?php  if (isset($content['field_top_image_grouped_deals'])): ?>    
 <div class="rowhero" style="background-image:url(<?php print render ($content['field_top_image_grouped_deals']); ?>); background-repeat:no-repeat;  height:300px;">
 <?php else: ?> 
-<div class="rowhero" style="height:300px;"> 
+<div class="rowhero" style="height:auto;">
+<?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
 <br /><h2 class="hero_title"><?php print render ($node->field_hero_headline['und'][0]['value']); ?><?php print render ($node->field_campaign_headline['und'][0]['value']); ?></h2> 
 <br /><h2 class="hero_subtitle"><?php print render ($node->field_hero_headline_2['und'][0]['value']); ?><?php print render ($node->field_campaign_headline_2['und'][0]['value']); ?></h2>
+
 <?php endif; ?> 
 </div> 
 </div> 
@@ -143,25 +145,47 @@ print render($hero1);
 
   <div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
 	
-    <h2 class="title"><?php print $title ?></h2>
-	
-	<?php
+<h2 class="title"></h2> <?php //print $title ?> <!-- title removed for HN as in header -->
+
+<?php
       // Hide comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+?>
+
+<div class="row">
+<!--<h2>What our current owners say</h2>-->
+<div class="fourcol" >
+<em>“It's pleasing to see a return from our property after some poor years” </em>with the past manager<br />
+</div>
+<div class="fourcol" >
+<em>“This first year with you has gone a long way to restoring our faith in investing in Japan”</em><br />
+</div>
+<div class="fourcol last" >
+<em>“Fantastic, keep up the good work!” </em>After informing the owner of their cash return for the winter.<br />
+</div>
+</div>
+
+<div class="row">
+<div class="fourcol" >
+<strong>71</strong>Properties under our management<br />
+</div>
+<div class="fourcol" >
+<strong>30000+</strong>Bed Nights<br />
+</div>
+<div class="fourcol last" >
+<strong>6000+</strong>Guest Served<br />
+</div>
+</div>
+
+
+
+	<?php
       print render($content);
     ?>
+
 <div class="clearfix"></div>    
-<div style="background-color:#CCC; margin-bottom:20px;">
-add custom fields here - will be seperate node--CUSTOM-TPL.tpl.php <br />
-<h2>What our current owners say</h2>
 
-<em>“It's pleasing to see a return from our property after some poor years” </em>with the past manager<br />
-<em>“This first year with you has gone a long way to restoring our faith in investing in Japan”</em><br />
-<em>“Fantastic, keep up the good work!” </em>After informing the owner of their cash return for the winter.<br />
-
-add bed stay properties managed etc.
-</div>
  
   <?php print render($content['comments']); ?>
 

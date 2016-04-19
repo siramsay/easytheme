@@ -111,74 +111,7 @@ margin-bottom: 40px;
 width :100%;
 }
 .inner-touchscroll { min-width:550px; }
-/**
- * hero image
- *
- * The first sentence of the long description starts here and continues on this
- * line for a while finally concluding here at the end of this paragraph.
- *
- * The long description is ideal for more detailed explanations and
- * documentation. It can include example HTML, URLs, or any other information
- * that is deemed necessary or useful.
- */
-.hero {
-background-position: center top;
-background-repeat: no-repeat;
-background-size: cover;
-display: block;
-height: 500px;
-width: 100%;
-}
-.hero_title, .hero_subtitle {
-color:#fff;
-text-shadow: #2A2A2A 1px 1px;
-margin-bottom: 0;
-}
-.hero_title {
-font-size: 240%;
-font-weight:900;
-margin-left: 3.8%;
-}
-.hero_subtitle {
-font-size: 180%;
-font-weight:400;
-margin-left: 7.8%;
-}
-/* Button */
-button, input[type="submit"], input[type="reset"], input[type="button"], input.form-submit, a.button, a.button-reverse {   /*.button,*/
--webkit-appearance: none;
--moz-border-bottom-colors: none;
--moz-border-left-colors: none;
--moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: none repeat-x scroll 0 0  rgba(0, 132, 61, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
-    border-color: #E4E4E4 #D2D2D2 #0f6e14;
-    border-image: none;
-	height: 45px;
-    border-style: solid;
-    border-width: 0 0 4px;
-	border-radius: 0;
-    color: #ffffff;
-    cursor: pointer;
-	padding: 10px 0.8em 10px;
-    text-align: center;
-	/*text-shadow: 0 1px 0 #FFFFFF;*/
-	font-size:100%!important; /* added to enforce size in input */
-	-webkit-transition:background-color 2s;
-    transition:background-color 2s; 
-}
-a.button-reverse {
-	color: #000000;
-	background: none repeat-x scroll 0 0  rgba(255, 255, 255, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
-	border-color: #E4E4E4 #D2D2D2 #cccccc;
-}
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, input.form-submit:hover, a.button:hover, a.button-reverse:hover {   /*.button,*/
-background-color: #FFCCCC;
-}
-/* UI */
-.ui-tabs .ui-tabs-hide {
-     display: none;
-}
+
 /**
  * Header element style
  *
@@ -320,6 +253,89 @@ text-align: center;
 text-shadow: 0 1px 0 #FFFFFF;
 font-size:100%!important; /* added to enforce size in input */ 
 }
+
+/**
+ * hero image
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ */
+.hero {
+background-position: center top;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+width: 100%;
+}
+.hero_title, .hero_subtitle {
+color:#fff;
+text-shadow: #2A2A2A 1px 1px;
+margin-bottom: 0;
+}
+.hero_title {
+font-size: 240%;
+font-weight:900;
+margin-left: 3.8%;
+}
+.hero_subtitle {
+font-size: 180%;
+font-weight:400;
+margin-left: 7.8%;
+}
+.rowhero p {
+color: #000000;
+margin-top: 40px;
+margin-left: 15%;
+margin-right: 15%;
+font-size: 120%;	
+}
+.rowhero p:first-child {
+color:#fff;
+font-size: 180%;
+margin-top: 120px;
+}
+
+
+/* Button */
+button, input[type="submit"], input[type="reset"], input[type="button"], input.form-submit, a.button, a.button-reverse {   /*.button,*/
+-webkit-appearance: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat-x scroll 0 0  rgba(0, 132, 61, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
+    border-color: #E4E4E4 #D2D2D2 #0f6e14;
+    border-image: none;
+	height: 45px;
+    border-style: solid;
+    border-width: 0 0 4px;
+	border-radius: 0;
+    color: #ffffff;
+    cursor: pointer;
+	padding: 10px 0.8em 10px;
+    text-align: center;
+	/*text-shadow: 0 1px 0 #FFFFFF;*/
+	font-size:100%!important; /* added to enforce size in input */
+	-webkit-transition:background-color 2s;
+    transition:background-color 2s; 
+}
+a.button-reverse {
+	color: #000000;
+	background: none repeat-x scroll 0 0  rgba(255, 255, 255, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
+	border-color: #E4E4E4 #D2D2D2 #cccccc;
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, input.form-submit:hover, a.button:hover, a.button-reverse:hover {   /*.button,*/
+background-color: #FFCCCC;
+}
+/* UI */
+.ui-tabs .ui-tabs-hide {
+     display: none;
+}
+
 /* Footer  */
 #footer{
 border-top: 1px solid #00843d;
