@@ -17,7 +17,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
  */
 
 html {
-background-color: #f3f3f3;
+/*background-color: #f3f3f3;*/
 box-sizing:border-box;	
 }
 
@@ -25,7 +25,7 @@ body {
 margin:0;
 padding:0;
 color: #5c5c5c;
-background-color: #FFFFFF;  /*#F3F3F3*/
+ /* background-color: #FFFFFF; #F3F3F3*/
 font-family: 'Open Sans', sans-serif;
 font-size:100%;
 line-height: 1.4;
@@ -125,7 +125,7 @@ font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 font-weight:100;
 }
 #header{
-background-color:rgba(251,251,51,0.2);
+background-color:rgba(255,255,255,0.2);
 }
 .filler {
 background-color:rgba(0,0,0,.2); /*rgba(0,0,0,.2); yel255, 255, 51, 0.2  red255,007,007;*/

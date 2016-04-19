@@ -112,7 +112,7 @@
 <!-- START hero -->
 <?php if (isset($node->field_hero_toggle['und'][0]['value']) && $node->field_hero_toggle['und'][0]['value'] == 1 ) : ?>   
 
-<div class="hero" style="background-image:url(
+<div class="hero" style="background-attachment:fixed; background-image:url(
 <?php
 // field_video_image is the name of the image field
 
