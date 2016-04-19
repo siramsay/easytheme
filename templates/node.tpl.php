@@ -100,7 +100,7 @@
   <?php endif; ?>
 
 
- <?php if ($page): ?>
+<?php if ($page): ?>
   <?php if (!empty($content['links'])): ?>
     <div class="links admin" style="background-color:#CCC; margin-bottom:20px;">
       <?php print render($content['links']); ?>  <!--add if campaign only on campaign page<br /><br />-->
@@ -112,7 +112,7 @@
 <!-- START hero -->
 <?php if (isset($node->field_hero_toggle['und'][0]['value']) && $node->field_hero_toggle['und'][0]['value'] == 1 ) : ?>   
 
-<div class="hero" style="background-attachment:fixed; background-image:url(
+<div class="hero" style="position:relative; ackground-attachment:fixed; background-image:url(
 <?php
 // field_video_image is the name of the image field
 
@@ -123,6 +123,7 @@ $field_hero_image = field_get_items('node', $node, 'field_hero_image');
 $hero1 = file_create_url($field_hero_image[0]['uri']);
 print render($hero1); 
 ?> )">
+<div class="hero_inner">
 
 <!-- START rowhero this is for content that is on the page and restricted to the page width-->       
 <div class="rowhero">
@@ -136,6 +137,7 @@ print render($hero1);
 
 <?php endif; ?> 
 </div> 
+</div>
 </div> 
 <!-- END rowhero -->
 
@@ -150,7 +152,6 @@ print render($hero1);
 <?php
       // Hide comments and links now so that we can render them later.
       hide($content['comments']);
-      hide($content['links']);
 ?>
 
 <div class="row">

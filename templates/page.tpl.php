@@ -66,33 +66,38 @@
 ?>
 <header id="header" class="clearfix">
     
-<div class="rowheader" >   
+<div class="row rowheader" >   
     
-<hgroup id="logo">
+<hgroup id="logo" class="threecol">
 <!-- HNPM Specific -->        
 <h2 class="logo"><a href="#" title="Property management"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
-
-
 <!-- HNPM Specific END-->
              
 <?php if ($logo): ?>
 <div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+<div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></div>
 <?php endif; ?>
-          
-<div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-</div>
-          
+
 </hgroup>
         
-<nav id="navigation">        
+<nav id="navigation" class="ninecol last">
+
+<div class="phone">
+<ul id="lang">
+<li id="lang_jap"><a href="http://holidayniseko.jp">日本語</a></li>
+</ul>
++81 136 21 6221 &nbsp; &nbsp; &nbsp; 
+<a class="headeremail" href="mailto:res@holidayniseko.com">res@holidayniseko.com</a>
+</div>
+ 
+        
 <div id="menu-icon">&nbsp<?php print $site_name; ?> &#x2261; </div>
-<?php print render($page['header']); ?>
 </nav>
         
-</div>
+</div> <!--END ROW -->
  	   
 </header>
-<!--END ROW -->
+
 
 <!-- start mob menu -->
 <div class="clearfix navigation">
