@@ -101,9 +101,9 @@
 
 
 <?php if ($page): ?>
-  <?php if ($content['links']): ?>
-    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;"> <!--this still shows see issue on hiding <br /><br />-->
-      <?php print render($content['links']); ?>  <!--add if campaign only on campaign page<br /><br />-->
+  <?php if ($content_links = render($content['links'])): ?> <!-- this solution for hiding regions in theme is dicusssed @ #953034 -->
+    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;"> <!--this still shows see issue on hiding above <br /><br />-->
+      <?php print $content_links; ?>  <!--add if campaign only on campaign page<br /><br />-->
     </div>
  <?php endif; ?>
 <?php endif; ?>
@@ -135,9 +135,7 @@ print render($hero1);
 <div class="rowhero para_hero" style="z-index:6;">
 <?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
 </div>
-
-
-</div>        
+</div> 
 <?php endif; ?> 
 <!-- END hero -->
 
