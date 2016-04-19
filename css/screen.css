@@ -132,8 +132,13 @@ font-size: 120%;
 font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 font-weight:100;
 }
+.header-wrapper{
+background-color: #93F;
+/*background-image:url( http://localhost/~simonramsay/hnone/sites/default/files/management_1640.jpg);*/
+background-attachment:fixed;
+}
 #header{
-background-color:rgba(255,255,255,0.2);
+background-color:rgba(255,255,255,0.9);
 }
 h2.logo {
 margin: 0;
@@ -226,7 +231,7 @@ padding-top: 10px;
 padding-bottom:10px;	
 }
 #search-block-form {
-background-color: #fff;
+/*background-color: #fff;*/
 border: none;
 height: 40px;
 margin: 0;
@@ -272,63 +277,55 @@ font-size:100%!important; /* added to enforce size in input */
  * documentation. It can include example HTML, URLs, or any other information
  * that is deemed necessary or useful.
  */
+
+.hero-wrapper {
+/*position: relative;*/
+height: auto;
+margin-bottom:240px;
+overflow:hidden;
+}
 .hero {
 background-position: center top;
 background-repeat: no-repeat;
 background-size: cover;
 display: block;
 width: 100%;
+height: 400px;
+position:relative;  
+background-attachment:fixed;
+margin-bottom:240px;
+overflow:hidden;
+height:inherit;
 }
-.hero_inner {
--moz-border-bottom-colors: none;
--moz-border-left-colors: none;
--moz-border-right-colors: none;
--moz-border-top-colors: none;
-border-color: transparent;
-border-image: none;
-border-style: solid;
-border-width: 10px 0;
-height: auto; /*30em;*/
-overflow: hidden;
-z-index: 4;
-}
-.hero_inner::after {
+.hero_inner {  /* ::after*/
 background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 bottom: 0;
 content: "";
-height: 190px;
+height: 250px;
 left: 0;
 position: absolute;
 right: 0;
 }
-.hero_title, .hero_subtitle {
-color:#fff;
-text-shadow: #2A2A2A 1px 1px;
-margin-bottom: 0;
+.para_hero {
+height: auto;
+position: relative;
+margin-left: 15%;
+margin-bottom: 40px;
 }
-.hero_title {
-font-size: 240%;
-font-weight:900;
-margin-left: 3.8%;
-}
-.hero_subtitle {
-font-size: 180%;
-font-weight:400;
-margin-left: 7.8%;
-}
-.rowhero p {
+.para_hero p {
 color: #000000;
 margin-top: 40px;
 margin-left: 15%;
 margin-right: 15%;
 font-size: 120%;
-z-index: 1000;	
+z-index: 1000;
 }
-.rowhero p:first-child {
+.para_hero p:first-child {
 color:#fff;
 font-size: 180%;
-margin-top: 120px;
+margin-top: 220px;
 }
+
 
 
 /* Button */

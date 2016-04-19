@@ -64,6 +64,7 @@
  * @see template_process()
  */
 ?>
+<div class="header-wrapper">
 <header id="header" class="clearfix">
     
 <div class="row rowheader" >   
@@ -97,7 +98,7 @@
 </div> <!--END ROW -->
  	   
 </header>
-
+</div>
 
 <!-- start mob menu -->
 <div class="clearfix navigation">
