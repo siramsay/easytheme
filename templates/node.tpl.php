@@ -101,8 +101,8 @@
 
 
 <?php if ($page): ?>
-  <?php if (!empty($content['links'])): ?>
-    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;">
+  <?php if ($content['links']): ?>
+    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;"> <!--this still shows see issue on hiding <br /><br />-->
       <?php print render($content['links']); ?>  <!--add if campaign only on campaign page<br /><br />-->
     </div>
  <?php endif; ?>
@@ -111,11 +111,10 @@
 
 <!-- START hero -->
 <?php if (isset($node->field_hero_toggle['und'][0]['value']) && $node->field_hero_toggle['und'][0]['value'] == 1 ) : ?>   
-
-<div class="hero" style="position:relative; ackground-attachment:fixed; background-image:url(
+<div class="hero-wrapper" >
+<div class="hero" style="background-image:url(
 <?php
 // field_video_image is the name of the image field
-
 // using field_get_items() you can get the field values (respecting multilingual setup)
 $field_hero_image = field_get_items('node', $node, 'field_hero_image');
 
@@ -123,72 +122,42 @@ $field_hero_image = field_get_items('node', $node, 'field_hero_image');
 $hero1 = file_create_url($field_hero_image[0]['uri']);
 print render($hero1); 
 ?> )">
-<div class="hero_inner">
 
 <!-- START rowhero this is for content that is on the page and restricted to the page width-->       
-<div class="rowhero">
-<?php  if (isset($content['field_top_image_grouped_deals'])): ?>    
-<div class="rowhero" style="background-image:url(<?php print render ($content['field_top_image_grouped_deals']); ?>); background-repeat:no-repeat;  height:300px;">
-<?php else: ?> 
-<div class="rowhero" style="height:auto;">
-<?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
-<br /><h2 class="hero_title"><?php print render ($node->field_hero_headline['und'][0]['value']); ?><?php print render ($node->field_campaign_headline['und'][0]['value']); ?></h2> 
-<br /><h2 class="hero_subtitle"><?php print render ($node->field_hero_headline_2['und'][0]['value']); ?><?php print render ($node->field_campaign_headline_2['und'][0]['value']); ?></h2>
 
-<?php endif; ?> 
-</div> 
-</div>
-</div> 
+
+<div class="clearfix"></div>
+ 
 <!-- END rowhero -->
+
+<div class="hero_inner" style="z-index:5;"> </div>
+
+<div class="rowhero para_hero" style="z-index:6;">
+<?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
+</div>
+
 
 </div>        
 <?php endif; ?> 
 <!-- END hero -->
 
-  <div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
+<div class="clearfix"></div> 
+
+<div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
 	
-<h2 class="title"></h2> <?php //print $title ?> <!-- title removed for HN as in header -->
+<?php //print $title ?> <!-- title removed for HN as in header <h2 class="title"></h2> -->
 
 <?php
       // Hide comments and links now so that we can render them later.
       hide($content['comments']);
 ?>
 
-<div class="row">
-<!--<h2>What our current owners say</h2>-->
-<div class="fourcol" >
-<em>“It's pleasing to see a return from our property after some poor years” </em>with the past manager<br />
-</div>
-<div class="fourcol" >
-<em>“This first year with you has gone a long way to restoring our faith in investing in Japan”</em><br />
-</div>
-<div class="fourcol last" >
-<em>“Fantastic, keep up the good work!” </em>After informing the owner of their cash return for the winter.<br />
-</div>
-</div>
-
-<div class="row">
-<div class="fourcol" >
-<strong>71</strong>Properties under our management<br />
-</div>
-<div class="fourcol" >
-<strong>30000+</strong>Bed Nights<br />
-</div>
-<div class="fourcol last" >
-<strong>6000+</strong>Guest Served<br />
-</div>
-</div>
-
-
-
-	<?php
-      print render($content);
-    ?>
-
-<div class="clearfix"></div>    
-
+<?php
+print render($content);
+?>
  
-  <?php print render($content['comments']); ?>
+<?php print render($content['comments']); ?>
+</div>
 
 <?php if (!$page): ?>
   </article> <!-- /.node -->
