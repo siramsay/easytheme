@@ -18,14 +18,14 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 html {
 /*background-color: #f3f3f3;*/
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+-webkit-box-sizing: inherit;
+-moz-box-sizing: inherit;
+box-sizing: inherit;
 }	
 
 body {
@@ -37,6 +37,16 @@ font-family: 'Open Sans', sans-serif;
 font-size:100%;
 line-height: 1.4;
 }
+.clear {
+ clear:both;
+}
+/*http://www.jqui.net/tips-tricks/css-clearfix/ */
+.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.clearfix{ display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix{ height: 1%;}
+.clearfix {display: block}
+
 h1,h2,h3,h4,h5,h6,ul{
 margin:0;
 padding:0;
@@ -62,15 +72,6 @@ margin-bottom:10px;
 .pjustify {
 text-align: justify;
 }
-.clear {
- clear:both;
-}
-/*http://www.jqui.net/tips-tricks/css-clearfix/ */
-.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-.clearfix{ display: inline-block;}
-html[xmlns] .clearfix { display: block;}
-* html .clearfix{ height: 1%;}
-.clearfix {display: block}
 /*typography*/
 h1 {
 font-size: 150%;
@@ -134,12 +135,12 @@ font-weight:100;
 #header{
 background-color:rgba(255,255,255,0.2);
 }
-.filler {
-background-color:rgba(0,0,0,.2); /*rgba(0,0,0,.2); yel255, 255, 51, 0.2  red255,007,007;*/
+h2.logo {
+margin: 0;
 }
 #header h2.logo a{
 background: url(../img/logo_header.png) no-repeat 0 0;
-height:40px;
+height:120px;
 text-indent:-9999px;
 overflow:hidden;
 float:left;
@@ -278,6 +279,28 @@ background-size: cover;
 display: block;
 width: 100%;
 }
+.hero_inner {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: transparent;
+border-image: none;
+border-style: solid;
+border-width: 10px 0;
+height: auto; /*30em;*/
+overflow: hidden;
+z-index: 4;
+}
+.hero_inner::after {
+background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+bottom: 0;
+content: "";
+height: 190px;
+left: 0;
+position: absolute;
+right: 0;
+}
 .hero_title, .hero_subtitle {
 color:#fff;
 text-shadow: #2A2A2A 1px 1px;
@@ -298,7 +321,8 @@ color: #000000;
 margin-top: 40px;
 margin-left: 15%;
 margin-right: 15%;
-font-size: 120%;	
+font-size: 120%;
+z-index: 1000;	
 }
 .rowhero p:first-child {
 color:#fff;

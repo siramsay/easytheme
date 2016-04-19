@@ -23,11 +23,15 @@ padding-top:20px;
 }
 
 /*hide appended menu*/
-#menu-icon, #search-icon { display: none;} /* #navigation  MENU ICON FOR MOBILE*/
+#menu-icon, #search-icon {
+display: none;
+} /* #navigation  MENU ICON FOR MOBILE*/
 #mob-menu {
-    display: none;
+display: none;
 }
-.page-search #search-icon, .search-info { display: none;}
+.page-search #search-icon, .search-info { 
+display: none;
+}
 
 
 /* this code above could be moved
@@ -45,6 +49,9 @@ max-width: 1140px;
 min-width: 735px;
 margin: 0 auto;
 overflow: hidden;
+}
+.rowheader {
+height: 120px;	
 }
 .containermain {
 margin-top: 40px;
