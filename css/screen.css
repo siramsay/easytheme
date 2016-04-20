@@ -27,11 +27,10 @@ box-sizing: border-box;
 -moz-box-sizing: inherit;
 box-sizing: inherit;
 }	
-
 body {
 margin:0;
 padding:0;
-color: #5c5c5c;
+color: #000000;
  /* background-color: #FFFFFF; #F3F3F3*/
 font-family: 'Open Sans', sans-serif;
 font-size:100%;
@@ -41,11 +40,21 @@ line-height: 1.4;
  clear:both;
 }
 /*http://www.jqui.net/tips-tricks/css-clearfix/ */
-.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-.clearfix{ display: inline-block;}
-html[xmlns] .clearfix { display: block;}
-* html .clearfix{ height: 1%;}
-.clearfix {display: block}
+.clearfix:after { 
+content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;
+}
+.clearfix { 
+display: inline-block;
+}
+html[xmlns] .clearfix { 
+display: block;
+}
+* html .clearfix { 
+height: 1%;
+}
+.clearfix {
+display: block;
+}
 
 h1,h2,h3,h4,h5,h6,ul{
 margin:0;
@@ -56,7 +65,7 @@ h1,h2,h3,h4,h5,h6{
 color: #2A2A2A ;
 }
 a {
-color:rgba(0, 132, 61, 1); /*color:#333333; #405c6c;*/
+color:#836d04; /*color:#333333; #405c6c; rgba(0, 132, 61, 1);*/
 text-decoration:none;
 }
 a:hover	{
@@ -138,7 +147,7 @@ background-color: #93F;
 background-attachment:fixed;
 }
 #header{
-background-color:rgba(255,255,255,0.9);
+background-color:rgba(255,255,255,1);
 }
 h2.logo {
 margin: 0;
@@ -157,13 +166,13 @@ width:100%;
 float:right;
 overflow:hidden;
 margin:10px 0 0;
-color:#ffffff!important;
+color:#000000!important;
 font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 font-weight:100;
 font-size: 130%;
 }
 .phone a {
-color:#ffffff!important;
+color:#000000!important;
 }
 .email{
 overflow:hidden;
@@ -180,7 +189,7 @@ display:inline;
 padding: 5px 0 5px 39px;
 background-position: 0 50%;
 background-repeat: no-repeat;background-image:url(../img/ja.png); 
-color:#fff;
+color:#000000;
 font-size: 90%;
 }
 /* header nav */
@@ -308,7 +317,7 @@ right: 0;
 height: auto;
 position: relative;
 margin-left: 15%;
-margin-bottom: 40px;
+margin-bottom: 40px!important;
 }
 .para_hero p {
 color: #000000;
@@ -321,10 +330,36 @@ z-index: 1000;
 .para_hero p:first-child {
 color:#fff;
 font-size: 180%;
-margin-top: 220px;
+margin-top: 110px;
 }
 
 
+/**
+ *Code for Module on HN Property Management Page
+ *
+ *<h2>What our current owners say</h2>
+ */
+.testimonial {
+padding: 20px;
+font-size: 130%;
+margin-bottom: 110px!important;
+}
+.testimonial span{
+color: #836d04;
+font-size: 92%;
+}
+.statistics {
+padding: 40px;
+font-size: 130%;
+margin-bottom: 110px!important;
+color: #836d04;
+text-align:center;
+}
+.statistics span{
+font-size: 260%;
+color: #000000;
+display:block;
+}
 
 /* Button */
 button, input[type="submit"], input[type="reset"], input[type="button"], input.form-submit, a.button, a.button-reverse {   /*.button,*/
