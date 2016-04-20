@@ -124,9 +124,7 @@ print render($hero1);
 ?> )">
 
 <!-- START rowhero this is for content that is on the page and restricted to the page width-->       
-
-
-<div class="clearfix"></div>
+<!--<div class="clearfix"></div>-->
  
 <!-- END rowhero -->
 
@@ -134,6 +132,8 @@ print render($hero1);
 
 <div class="rowhero para_hero" style="z-index:6;">
 <?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
+</div>
+
 </div>
 </div> 
 <?php endif; ?> 
@@ -149,13 +149,47 @@ print render($hero1);
       // Hide comments and links now so that we can render them later.
       hide($content['comments']);
 ?>
+</div>
 
+<div class="row testimonial">
+<!--<h2>What our current owners say</h2>-->
+<div class="fourcol" >
+“It's pleasing to see a return from our property after some poor years” <span>with the past manager.<span>
+</div>
+<div class="fourcol" >
+“This first year with you has gone a long way to restoring our faith in investing in Japan”
+</div>
+<div class="fourcol last" >
+“Fantastic, keep up the good work!” <span>After informing the owner of their cash return for the winter.</span>
+</div>
+</div>
+
+
+<div class="row statistics">
+<div class="fourcol" >
+<span>21</span>Buildings under our management
+</div>
+<div class="fourcol" >
+<span>73</span>Units under our management
+</div>
+<div class="fourcol last" >
+<span>334</span>Beds>
+</div>
+</div>
+
+
+<div class="row">
 <?php
 print render($content);
 ?>
- 
-<?php print render($content['comments']); ?>
+<?php 
+print render($content['comments']); 
+?>
 </div>
+
+ 
+
+
 
 <?php if (!$page): ?>
   </article> <!-- /.node -->
