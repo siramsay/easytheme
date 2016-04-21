@@ -51,12 +51,12 @@ margin: 0 auto;
 overflow: hidden;
 }
 .rowheader {
-height: 120px;	
+height: 140px;	
 }
 .containermain {
 margin-top: 40px;
 }
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .headerfourcol, .headereightcol, .sixcol_65, .sixcol_35, .view-deal .views-row-odd, .view-deal .views-row-even, .views-row-odd, .views-row-even, .node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9 { /*.view-niseko-services .views-row-odd, .view-niseko-services .views-row-even,*/
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .headerfourcol, .headereightcol, .sixcol_65, .sixcol_35, .view-deal .views-row-odd, .view-deal .views-row-even, .views-row-odd, .views-row-even, .node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9, .fourcol_stat { /*.view-niseko-services .views-row-odd, .view-niseko-services .views-row-even,*/
 margin-right: 3.8%;
 float: left;
 min-height: 1px;
@@ -78,7 +78,7 @@ width: 13.45%;
 .row .threecol, .nested .threecol {
 width: 22.05%;
 }
-.row .fourcol, .nested .fourcol, .row .headerfourcol {
+.row .fourcol, .nested .fourcol, .row .headerfourcol, .row .fourcol_stat {
 width: 30.75%;
 }
 .node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9 {
@@ -122,113 +122,20 @@ attached view property :  view-display-id-entity_view_5 <.view-display-id-node_c
 margin-right: 0px;
 }
 
-
-/* layout overides 
-================================================== */
-/* deal "BLOCKS" 
-view view-deal view-id-deal view-display-id-node_content_6 view-dom-id-2*/
-.deal_mid .top .title{
-		font-weight:bold!important; 
-}
-.deal_mid .mid span.price{
-		color:#ff0000;		 
-}
-.view-id-Team .mobile-image {
-		display: inline;
-		float:left;
-		width:30%;
-		margin-right: 3.8%;
-}
-.view-id-Team .mobile-data {
-		display: inline;
-		float:left;
-		width:60.75% ;
-		padding: 0;
-}
-
 @media only screen and (max-width: 1159px) {
-.page-node-add #header h2.logo a {
-margin: 0 0 10px 10px;	
-}
+
 }
 
 @media only screen and (max-width: 1139px) {
-.row .headerfourcol {
+.rowheader .threecol {
 padding-left: 15px;
 }
-.row .headereightcol {
+.rowheader .ninecol {
 padding-right: 15px;
 }
-.row .sixcol_65 {
-padding-left:15px;
-padding-right:15px;
-}
-.view-all-niskeo-accommodation .sixcol_65 {
-padding-left:0;
-padding-right:0;
-}
-.row .sixcol_35 {
-width: 35%;
-}
-#block-block-14 { /* accom deals */
-margin-left: 40px;
-}
-#block-block-15 {
-	margin: 70px 0 0 20px;
-}
-.page-node-add #header h2.logo a {
-margin: 0 0 10px 10px;	
-}
-
 }
 @media only screen and (max-width: 1023px) {
-.node-type-weather .eightcol,  .node-type-weather .fourcol {
-width: auto;
-float: none;
-margin-left: 0;
-margin-right: 0;
-padding-left: 0;
-padding-right: 0;	 
-}
-.weatherlinks {
-width: 100%;
-min-width: 0;
-margin-left: 0;
-margin-right: 0;
-padding-left: 0;
-padding-right: 0;
-}
-.weatherlinks .eightcol, .weatherlinks .fourcol { 
-width: auto;
-float: none;
-margin-left: 0;
-margin-right: 0;
-padding-left: 0;
-padding-right: 0;
-}
-.weatherlinks .fourcol {
-margin-top: 40px;
-}
-.row .sixcol_65, .view-all-niskeo-accommodation .sixcol_65 {
-width: 60%;
-}
-.row .sixcol_35 {
-width: 30%;
-}
-#block-block-14 { /* accom deals */
-display: none;
-margin-left: 40px;
-}
-#block-block-15 { /*HP benefits*/
-display: none;
-}
-.view-What-People-Say { /* needs checking */
-float:left;
-width: 100%;
-}
-#block-block-14 p {
-font-size: 170%;
-}
+
 }
 @media only screen and (max-width: 959px) {  /* 896 */
 .row .headerfourcol {
@@ -266,7 +173,7 @@ float: right;
 line-height: .66em;
 margin: 0;
 padding: 0 20px 0 0 ;
-font-size:98%;
+font-size:300%;
 vertical-align:middle;
 height:40px;
 }
@@ -299,8 +206,6 @@ background-color: #BBBBBB;
 #header {
 background-color: #ffffff;
 border-bottom: 0;
-padding-top: 10px;
-padding: 10px 0 10px 0;
 }		
 #mob-menu {
 display: block;
@@ -384,7 +289,7 @@ padding-right: 0px;
 .rowheader, .rowhero {
  margin-top: 0;
 }
-/* this needs reviewing above*/
+/* this needs reviewing above */
 .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol, #navigation .fivecol {
 width: auto;
 float: none;
@@ -401,17 +306,7 @@ margin-right: 0px;
 padding-left: 0px;
 padding-right: 0px;
 }
-.view-display-id-node_content_7 .views-row-odd, .view-display-id-node_content_7 .views-row-even, .eightcol .fifty  {
-margin-right: 3.8%;
-float: left;
-min-height: 1px;
-width: 48%;
-}
-.view-display-id-node_content_7 .views-row-even, .eightcol .fiftylast {
-margin-right:0
-}
-
-/********************************************************* footer  #footer .business, #footer .social,*/
+/* footer  #footer .business, #footer .social */
 #footer div h2 a {
  margin:20px 0 0;
  float:left;
@@ -420,7 +315,7 @@ margin-right:0
 margin-left: 0!important;
 font-size:70%;
 }
-/********************************************************* need to check HN specific */
+/* need to check HN specific */
 #property_top .fourcol, #property_top .eightcol {
 	width: auto;
 	float: none;
@@ -440,74 +335,19 @@ font-size:70%;
 .hero_subtitle {
     font-size: 120%;
 }
-/* deal page buttons*/
-#block-block-11 {display:none;}
-/*  #search elements
-================================================== 
-/*#block-block-7 .content, #block-block-14 .content, .block-availability_search .content, .view-all-niskeo-accommodation .view-filters  { -> #block-block-7 .content  */
-#block-multiblock-1 .content, #block-multiblock-2 .content,  #block-multiblock-5 .content, #block-multiblock-6 .content, .view-all-niskeo-accommodation .view-filters  {
-	width: 95%;
-}
-.front .about p {
-
-margin: 0 0 0 0;
-}
-.page-holiday-niseko-accommodation {
-background-position: center -40px;
-}
-
 }
 
 @media only screen and (max-width: 767px) {
-.row .headerfourcol {
-width: 20%;
+.rowheader .threecol {
+width: 40%;
 }
-.row .headereightcol {
-width: 60%;
-}
-.views-row-odd, .views-row-even, .view-deal .views-row-odd, .view-deal .views-row-even { /* , .view-deal .views-row-odd, .view-deal .views-row-even  add this for deals pages ONLY*/
-	width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	}
-.node-type-accommodation .views-row-1, .node-type-accommodation .views-row-2, .node-type-accommodation .views-row-3, .view-niseko-services .views-row-1, .view-niseko-services .views-row-2, .view-niseko-services .views-row-3, .view-niseko-services .views-row-4, .view-niseko-services .views-row-5, .view-niseko-services .views-row-6, .view-niseko-services .views-row-7, .view-niseko-services .views-row-8, .view-niseko-services .views-row-9, .eightcol .fifty {
-    width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.row .sixcol_65, .row .sixcol_35 {
-	width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.view-all-niskeo-accommodation .sixcol_65, .view-all-niskeo-accommodation .sixcol_35 {
-padding-left:0;
-padding-right:0;
-}
-.view-display-id-node_content_7 .views-row-odd, .view-display-id-node_content_7 .views-row-even {
-margin-right: 3.8%;
-float: left;
-min-height: 1px;
-width: 48%;
-}
-.view-display-id-node_content_7 .views-row-even {
-margin-right:0
-}
+.rowheader .ninecol {
+/*width: 60%;
+*/}
 /* mobile menu */
 #header h2.logo a{
-	background: url("../img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-	background-size: 40px 40px;
+	background: url("../img/logo_header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	width:100%;
-	margin:0;
 }
 /* show hide */
 .mobile-hide {
@@ -516,13 +356,7 @@ margin-right:0
 .mobile-show {
 	display: block;
 }
-/* ACCOMMODATION */
-ul#accom_nav  {
-	display: none; 
-}
-#block-block-14 { /* accom deals */
-	display: none;
-}
+
 .capsule-bg .mobile-data{
 padding: 0;
 }
@@ -537,43 +371,13 @@ padding: 0;
 		float:left;
 		width: 39.45%;
 }
-/*scroll on touch screen*/
+/* scroll on touch screen */
 .touchscroll {overflow-x: scroll!important; -webkit-overflow-scrolling:touch!important;}
-/*webform*/
-#webform-client-form-227 .form-item label, #webform-client-form-235 .form-item label, #webform-client-form-3859 .form-item label,
-#webform-client-form-235 .form-type-checkbox {
-float: none;
-display: block;
-}
-#webform-client-form-227 input#edit-mollom-captcha, #webform-client-form-235 input#edit-mollom-captcha,
-#webform-client-form-227 input#edit-submit, #webform-client-form-235 input#edit-submit {
-margin-left: 0;
-}
-#webform-client-form-227 textarea, #webform-client-form-235 textarea , #webform-client-form-3859 textarea {
-width: 280px;
-}
-/*availibility submit*/
-.block-availability_search #edit-submit--2 {
-margin-top: 0!important;
-float:none;
-}
-#block-block-7 .form-item /*, .block-availability_search .form-item, .view-all-niskeo-accommodation .form-item*/ {
-padding: 0 0 0 0;
-}
-#edit-n-wrapper {
-height: 60px;/* added to force the button below the check in input */	
-}
-/*holiday booking overides */
-#webform-client-form-3859 #webform-component-pid .form-item select.form-3859 {
-float: none;
-display:block;
-margin-left: 0;
-margin-top: 10px;
-}	
-#copyright, #back-to-top{ float: right; width: 100%; text-align: right;}
-/* site map */
-#site-map .site-map-menus .site-map-box {
-width:100%;
+
+#copyright, #back-to-top {
+float: right; 
+width: 100%; 
+text-align: right;}
 }
 }
 @media only screen and (max-width: 567px) {	
@@ -585,40 +389,7 @@ width:100%;
 }
 }
 @media only screen and (max-width: 460px) {
-/*  #search elements
-================================================== */
-#block-multiblock-1 .content, #block-multiblock-2 .content,  #block-multiblock-5 .content, #block-multiblock-6 .content, .view-all-niskeo-accommodation .view-filters {
-padding:0;
-width:100%;
-}
-/*.views-exposed-form .views-exposed-widget, #block-multiblock-2 .views-exposed-form .views-exposed-widget, #block-multiblock-1 .views-exposed-form .views-exposed-widget {
-padding: 0 0 0;
-}*/
-/*overides for view form for search modules line 142 >   */
-.views-exposed-form .views-exposed-widget, #block-multiblock-1 .form-item, #block-multiblock-2 .form-item, #block-multiblock-5 .form-item, #block-multiblock-6 .form-item, .view-all-niskeo-accommodation .form-item  {
-padding: 0;
-width: 32%;
-}
-.views-exposed-form .views-submit-button { /*overide for button .views-exposed-form */
-width: 100%;
-}
-#block-multiblock-2 #views-exposed-widget-guest, #block-multiblock-1 #views-exposed-widget-guest, #block-multiblock-6 #edit-ciu-wrapper, #block-multiblock-5 #edit-ciu-wrapper {
-width: 36%;
-}
-/* homepage "MAIN" deals */
-.view-deal .views-row-odd, .view-deal .views-row-even {
-width: 100%;
-}
-.view-Explore-Niseko .views-row-even .switch-text {
-margin-right: 0;
-}
-#edit-n-wrapper {
-height: 40px;
-}
-.compact-form-label {
-font-weight: normal;
-top: 12px;
-}
+
 }
 @media handheld, only screen and (max-width: 320px) {
 .capsule-bg .mobile-data{

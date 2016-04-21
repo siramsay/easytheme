@@ -84,14 +84,12 @@
 <nav id="navigation" class="ninecol last">
 
 <div class="phone">
-<!--
 <ul id="lang">
 <li id="lang_jap"><a href="http://holidayniseko.jp">日本語</a></li>
 </ul>
--->
-<strong><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></strong> &nbsp; &nbsp; &nbsp; 
+Accommodation &nbsp; &nbsp; &nbsp; 
 +81 136 21 6221 &nbsp; &nbsp; &nbsp; 
-<a class="headeremail" href="mailto:info@holidayniseko.com">info@holidayniseko.com</a>
+<a class="headeremail" href="mailto:res@holidayniseko.com">res@holidayniseko.com</a>
 </div>
  
         
@@ -108,8 +106,9 @@
 <div id="mob-menu">
 <!-- test ul -->
 <ul class="links">
-<li class="last"><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></li>
+<li class="last">test links - to be remove</li>
 </ul>
+
 <?php 
 $main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
 print drupal_render($main_menu_tree);
@@ -131,35 +130,40 @@ print drupal_render($main_menu_tree);
                                   </aside> 
                                 <?php endif; ?>
 
-<div style="background-color:grey">
-<?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
-</div>
 
-<?php if ($page['sidebar_second']): ?>
-<section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
-<?php else: ?>
-<section id="content" role="main" class="clearfix">
-<?php endif; ?>
- 
-<?php print $messages; ?> <!----- system messages -->
-
-<?php print render($title_prefix); ?>
-<?php if (!$is_front): ?>
-<?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
-<?php endif; ?>
-<?php print render($title_suffix); ?>
+    <div style="background-color:grey">
+     <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+    </div>
+	
+	<?php if ($page['sidebar_second']): ?>
+    <section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
+    <?php else: ?>
+    <section id="content" role="main" class="clearfix">
+    <?php endif; ?> 
+     
       
-<div style="background-color:grey">
-<?php print render($page['help']); ?>  <!--- help  -->
-<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul> links<?php endif; ?>
-</div>
-
-<!--<strong> THIS IS ABOVE THE CONTENT $page render in the page tpl</strong>-->
-<?php print render($page['content']); ?>
-<!--<strong> THIS IS BELOW THE CONTENT $page render in the page tpl</strong>-->
+      <?php print $messages; ?> <!----- system messages -->
       
-</section>
-<!-- /#main -->
+      
+      <?php print render($title_prefix); ?>
+      <?php if (!$is_front): ?>
+	  <?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
+      <?php endif; ?>
+	  <?php print render($title_suffix); ?>
+      
+      <div style="background-color:grey">
+	  
+
+      <?php print render($page['help']); ?>  <!--- help  -->
+      
+	  <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul> links<?php endif; ?>
+      </div>
+      
+      <!--<strong> THIS IS ABOVE THE CONTENT $page rneder in the page tpl</strong>-->
+	  <?php print render($page['content']); ?>
+      <!--<strong> THIS IS BELOW THE CONTENT $page rneder in the page tpl</strong>-->
+      
+    </section> <!-- /#main -->
 
 <!----- remove / move to node.tpl -->
   	<?php if ($page['sidebar_second']): ?>
@@ -168,9 +172,14 @@ print drupal_render($main_menu_tree);
       </aside> 
     <?php endif; ?>
 
-<div class="clear"></div>
-	
-<div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
+    <div class="clear"></div>
+    
+   
+<!-- remove row  
+ </div><!--END ROW -->
+
+  		
+ <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
         	
             <div class="eightcol">
          	 	<?php print render($page['footer']); ?>
@@ -181,9 +190,27 @@ print drupal_render($main_menu_tree);
             	<?php print render($page['footer_right']); ?>
            
  			</div>          
-</div><!--END ROW -->
- 
-<div id="" class="row clearfix" style="margin-bottom: 40px;">
+ </div><!--END ROW -->
+        
+        
+ <div id="footer-menu" class="row clearfix"  style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
+        <?php 
+			 // https://www.drupal.org/node/1043018 How to print a menu in Drupal 7?
+		   	$menu = menu_navigation_links('secondary-menu');
+			print theme('links__secondary_menu', array('links' => $menu));
+		
+           	//$tree = menu_tree_all_data('secondary-menu');
+			//menu_tree_add_active_path($tree);
+			//$tree = add_active_trail($tree); // add this line 
+			//print drupal_render(menu_tree_output($tree));
+		   
+		   
+		    //$main_menu_tree2 = menu_tree(variable_get('secondary_links_source', 'secondary-menu'));
+          	//print drupal_render($main_menu_tree2);
+        ?>
+ </div><!--END ROW -->
+        
+ <div id="" class="row clearfix" style="margin-bottom: 40px;">
         
             <div id="back-to-top" class="clearfix" style="float:right;">
               <a href="#" class"top">back up ↑</a>
@@ -196,4 +223,8 @@ print drupal_render($main_menu_tree);
         
         
         
-</div> <!--END ROW -->
+  </div> <!--END ROW --> 
+  
+ 
+<!-- container
+</div-->
