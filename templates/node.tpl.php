@@ -151,10 +151,11 @@ print render($hero1);
 ?>
 </div>
 
+<div class="container">
 <div class="row testimonial">
 <!--<h2>What our current owners say</h2>-->
 <div class="fourcol" >
-“It's pleasing to see a return from our property after some poor years” <span>with the past manager.<span>
+“It's pleasing to see a return from our property after some poor years” <span>with the past manager.</span>
 </div>
 <div class="fourcol" >
 “This first year with you has gone a long way to restoring our faith in investing in Japan”
@@ -163,31 +164,43 @@ print render($hero1);
 “Fantastic, keep up the good work!” <span>After informing the owner of their cash return for the winter.</span>
 </div>
 </div>
+</div>
 
-
+<div class="container">
 <div class="row statistics">
-<div class="fourcol" >
+<div class="fourcol_stat" >
 <span>21</span>Buildings under our management
 </div>
-<div class="fourcol" >
+<div class="fourcol_stat" >
 <span>73</span>Units under our management
 </div>
-<div class="fourcol last" >
-<span>334</span>Beds>
+<div class="fourcol_stat last" >
+<span>334</span>Beds
+</div>
 </div>
 </div>
 
-
+<div class="container">
 <div class="row">
+<div class="twelvecol" >
 <?php
 print render($content);
 ?>
+
 <?php 
 print render($content['comments']); 
 ?>
 </div>
+</div>
+</div>
 
- 
+
+<div class="row contact">
+<div class="fourcol" >Get in <a href="http://holidayniseko.com/contact-us">contact</a> with us today!</div>
+<div class="fourcol" ><a href="mailto:ashley@holidayniseko.com">ashley@holidayniseko.com</a></div>
+<div class="fourcol last" >Ph: +81(0)136-21-6221</div>
+</div>
+
 
 
 

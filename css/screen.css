@@ -3,7 +3,7 @@
 /* font-family: "Trebuchet MS",sans-serif;*/
 /* font-family: "Lucida Grande",Verdana,sans-serif;*/
 /* font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif	*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans); /*font-family: 'Open Sans', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300); /*font-family: 'Open Sans', sans-serif;*/
 /*@import url(http://fonts.googleapis.com/css?family=Noto+Serif); font-family: 'Noto Serif', serif;*/
 /*@import url(http://fonts.googleapis.com/css?family=Merriweather:300); /*font-family: 'Merriweather', serif;*/ 
 
@@ -55,14 +55,9 @@ height: 1%;
 .clearfix {
 display: block;
 }
-
-h1,h2,h3,h4,h5,h6,ul{
-margin:0;
-padding:0;
-list-style:none;
-}
+/*Typography*/
 h1,h2,h3,h4,h5,h6{
-color: #2A2A2A ;
+color: #213f99 ;
 }
 a {
 color:#836d04; /*color:#333333; #405c6c; rgba(0, 132, 61, 1);*/
@@ -81,7 +76,9 @@ margin-bottom:10px;
 .pjustify {
 text-align: justify;
 }
-/*typography*/
+ul{
+list-style:none;
+}
 h1 {
 font-size: 150%;
 font-weight: 100;
@@ -115,19 +112,30 @@ font-size:70%;
 .medium {
 font-size:90%;
 }
-#content  ul {
-list-style:square;
+#content ul {
+list-style: disc;
 margin: 0 0 0 30px ;
+}
+#content ul li {
+line-height: 1.4;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 #sidebar .block {
 margin-bottom: 40px;
 }
-/*touchscroll*/
-/*scroll on touch screen *add to touch screen {overflow: auto; -webkit-overflow-scrolling:touch;}*/
+/** 
+ * touchscroll
+ *
+ * scroll width on touch screen *add to touch screen 
+ * {overflow: auto; -webkit-overflow-scrolling:touch;}
+ */
 .touchscroll {
 width :100%;
 }
-.inner-touchscroll { min-width:550px; }
+.inner-touchscroll {
+min-width:550px;
+}
 
 /**
  * Header element style
@@ -159,8 +167,11 @@ text-indent:-9999px;
 overflow:hidden;
 float:left;
 display:inline;
-margin:10px 0 0;
+margin:15px 0 0;
 width:100%;	
+}
+#navigation {
+margin-top: 50px;
 }
 .phone {
 float:right;
@@ -297,7 +308,7 @@ background-repeat: no-repeat;
 background-size: cover;
 display: block;
 width: 100%;
-height: 400px;
+height: 550px;
 position:relative;  
 background-attachment:fixed;
 margin-bottom:120px;
@@ -305,10 +316,10 @@ overflow:hidden;
 height:inherit;
 }
 .hero_inner {  /* ::after*/
-background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 bottom: 0;
 content: "";
-height: 250px;
+height: 350px;
 left: 0;
 position: absolute;
 right: 0;
@@ -317,7 +328,19 @@ right: 0;
 height: auto;
 position: relative;
 margin-left: 15%;
-margin-bottom: 40px!important;
+padding-bottom: 60px!important;
+}
+.para_hero::after {
+background: #333333 none repeat scroll 0 0;
+bottom: 0;
+content: "";
+float: left;
+height: 1px;
+left: 50%;
+margin-left: -60px;
+margin-top:-40px;
+position: absolute;
+width: 120px;
 }
 .para_hero p {
 color: #000000;
@@ -325,12 +348,14 @@ margin-top: 40px;
 margin-left: 15%;
 margin-right: 15%;
 font-size: 120%;
+font-weight:400;
 z-index: 1000;
 }
 .para_hero p:first-child {
 color:#fff;
 font-size: 180%;
 margin-top: 110px;
+font-weight:300;
 }
 
 
@@ -360,6 +385,13 @@ font-size: 260%;
 color: #000000;
 display:block;
 }
+.contact {
+font-size: 130%;
+background-color: #333333;
+color: #ffffff;
+padding: 60px 20px;
+text-align: center;
+}
 
 /* Button */
 button, input[type="submit"], input[type="reset"], input[type="button"], input.form-submit, a.button, a.button-reverse {   /*.button,*/
@@ -367,22 +399,22 @@ button, input[type="submit"], input[type="reset"], input[type="button"], input.f
 -moz-border-bottom-colors: none;
 -moz-border-left-colors: none;
 -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: none repeat-x scroll 0 0  rgba(0, 132, 61, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
-    border-color: #E4E4E4 #D2D2D2 #0f6e14;
-    border-image: none;
-	height: 45px;
-    border-style: solid;
-    border-width: 0 0 4px;
-	border-radius: 0;
-    color: #ffffff;
-    cursor: pointer;
-	padding: 10px 0.8em 10px;
-    text-align: center;
-	/*text-shadow: 0 1px 0 #FFFFFF;*/
-	font-size:100%!important; /* added to enforce size in input */
-	-webkit-transition:background-color 2s;
-    transition:background-color 2s; 
+-moz-border-top-colors: none;
+background: none repeat-x scroll 0 0  rgba(0, 132, 61, 1); /* url("../images/buttons.png") repeat-x scroll 0 0  #00843D  */
+border-color: #E4E4E4 #D2D2D2 #0f6e14;
+border-image: none;
+height: 45px;
+border-style: solid;
+border-width: 0 0 4px;
+border-radius: 0;
+color: #ffffff;
+cursor: pointer;
+padding: 10px 0.8em 10px;
+text-align: center;
+/*text-shadow: 0 1px 0 #FFFFFF;*/
+font-size:100%!important; /* added to enforce size in input */
+-webkit-transition:background-color 2s;
+transition:background-color 2s; 
 }
 a.button-reverse {
 	color: #000000;
