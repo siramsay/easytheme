@@ -34,6 +34,7 @@ regions[content] = content
 
 stylesheets[all][] = css/screen.css
 stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/fontello.css
 #stylesheets[all][] = css/grid.css
 #stylesheets[all][] = css/admin.css
 #stylesheets[all][] = css/availibilty

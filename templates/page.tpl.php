@@ -107,7 +107,8 @@
 <div class="clearfix navigation">
 <div id="mob-menu">
 <!-- test ul -->
-<ul class="links">
+<ul class="links the-icons ">
+<li class="phone-icon" > +81-136-21-6221</li>
 <li class="last"><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></li>
 </ul>
 <?php 

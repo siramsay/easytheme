@@ -220,26 +220,33 @@ border: medium none;
 clear: both;
 display: none;
 height: auto;
-margin: 0 auto;
+margin: 20px auto;
 padding: 0;
 position: relative;
 top: 0;
 z-index: 10000;
 width:95%;
-}	
-#mob-menu .links ul {
-margin: 0;
-}	
+}
+/*#mob-menu ul {
+list-style:none;
+margin: 0 0 0 30px ;
+}*/
 #mob-menu .links li {
 clear: both;
 display: block;
 float: none;
 margin: 0 0 10px;
-}		
+}
+#mob-menu .links .phone-icon:before {
+font-family: 'fontello';
+content: '\e801';
+margin:0 5px 0 0;
+}
+		
 #mob-menu .links a {
 background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 border: medium none;
-color: #F1F1F1;
+color: #000000;
 display: block;
 font: inherit;
 padding: 0;
@@ -338,6 +345,9 @@ font-size:70%;
 }
 
 @media only screen and (max-width: 767px) {
+.rowheader {
+height: 90px;
+}
 .rowheader .threecol {
 width: 40%;
 }
@@ -347,7 +357,11 @@ width: 40%;
 /* mobile menu */
 #header h2.logo a{
 	background: url("../img/logo_header.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-size: 80px auto;
 	width:100%;
+}
+#menu-icon, #search-icon {  
+line-height: 0.1em;
 }
 /* show hide */
 .mobile-hide {
@@ -378,6 +392,55 @@ padding: 0;
 float: right; 
 width: 100%; 
 text-align: right;}
+/* hero font sizes & margins */
+.hero {
+margin-bottom: 0;
+}
+.para_hero p {
+color: #000000;
+margin-top: 40px;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 110%;
+font-weight:400;
+z-index: 1000;
+}
+.para_hero p:first-child {
+color:#fff;
+font-size: 140%;
+margin-top: 55px;
+font-weight:300;
+}
+/**
+ *Code for Module on HN Property Management Page
+ *
+ *<h2>What our current owners say</h2>
+ */
+.testimonial {
+padding: 50px 50px 0;
+font-size: 110%;
+margin-bottom: 0!important;
+}
+.testimonial .fourcol {
+margin-bottom: 40px;
+}
+.testimonial span{
+color: #836d04;
+font-size: 92%;
+}
+.statistics {
+padding: 40px 0;
+font-size: 100%;
+margin-bottom: 40px!important;
+background-color:#f1f1f1;
+}
+.statistics span{
+font-size: 200%;
+}
+.contact .fourcol {
+padding-bottom: 30px;
+}
+
 }
 }
 @media only screen and (max-width: 567px) {	
