@@ -112,7 +112,7 @@
 <!-- START hero -->
 <?php if (isset($node->field_hero_toggle['und'][0]['value']) && $node->field_hero_toggle['und'][0]['value'] == 1 ) : ?>   
 <div class="hero-wrapper" >
-<div class="hero" style="background-image:url(
+<div class="hero bg-holder-parallax" style="background-image:url(
 <?php
 // field_video_image is the name of the image field
 // using field_get_items() you can get the field values (respecting multilingual setup)
@@ -197,8 +197,8 @@ print render($content['comments']);
 
 <div class="row contact">
 <div class="fourcol" >Get in <a href="http://holidayniseko.com/contact-us">contact</a> with us today!</div>
-<div class="fourcol" ><a href="mailto:ashley@holidayniseko.com">ashley@holidayniseko.com</a></div>
-<div class="fourcol last" >Ph: +81(0)136-21-6221</div>
+<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:ashley@holidayniseko.com">ashley@holidayniseko.com</a></div>
+<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)136-21-6221</div>
 </div>
 
 

@@ -113,13 +113,19 @@ font-size:70%;
 font-size:90%;
 }
 #content ul {
-list-style: disc;
+list-style:none;
 margin: 0 0 0 30px ;
 }
 #content ul li {
 line-height: 1.4;
 margin-top: 15px;
 margin-bottom: 15px;
+}
+.container ul li:before {    
+font-family: 'fontello';
+content: '\e802';
+margin:0 5px 0 -20px;
+color: #836d04;
 }
 #sidebar .block {
 margin-bottom: 40px;
@@ -337,7 +343,7 @@ content: "";
 float: left;
 height: 1px;
 left: 50%;
-margin-left: -60px;
+margin-left:-60px;
 margin-top:-40px;
 position: absolute;
 width: 120px;
@@ -391,6 +397,9 @@ background-color: #333333;
 color: #ffffff;
 padding: 60px 20px;
 text-align: center;
+}
+.contact a:hover {
+color: #f1f1f1;
 }
 
 /* Button */
