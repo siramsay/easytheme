@@ -70,11 +70,15 @@
 <div class="row rowheader" >   
     
 <hgroup id="logo" class="threecol">
-<!-- HNPM Specific -->        
+<!-- HNPM Specific     
 <h2 class="logo"><a href="#" title="Property management"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
-<!-- HNPM Specific END-->
+ HNPM Specific END-->
              
-<?php if ($logo): ?>
+<?php if ($logo): 
+/** 
+  * add this logic to node/content type level/ add retina logo info on theme settings page , if done need make logo click disbaled but hav mini top bar with maon site link
+  */
+?>
 <div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
 <div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></div>
 <?php endif; ?>
