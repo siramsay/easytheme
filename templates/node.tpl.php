@@ -77,7 +77,8 @@
 <?php if (!$page): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php endif; ?>
-  
+
+<!-- need to add container for when in taxonomy pages -->
   <?php if (!$page): ?>
       <header>
 	<?php endif; ?>
@@ -155,13 +156,13 @@ print render($hero1);
 <div class="row testimonial">
 <!--<h2>What our current owners say</h2>-->
 <div class="fourcol" >
-“It's pleasing to see a return from our property after some poor years” <span>with the past manager.</span>
+“best best” <span>service ever</span>
 </div>
 <div class="fourcol" >
-“This first year with you has gone a long way to restoring our faith in investing in Japan”
+“best best”
 </div>
 <div class="fourcol last" >
-“Fantastic, keep up the good work!” <span>After informing the owner of their cash return for the winter.</span>
+“best best” <span>just for being</span>
 </div>
 </div>
 </div>
@@ -169,13 +170,13 @@ print render($hero1);
 <div class="container">
 <div class="row statistics">
 <div class="fourcol_stat" >
-<span>21</span>Buildings under our management
+<span>21</span>New Products
 </div>
 <div class="fourcol_stat" >
-<span>73</span>Units under our management
+<span>73</span>Hours Worked
 </div>
 <div class="fourcol_stat last" >
-<span>334</span>Beds
+<span>334</span>Staff
 </div>
 </div>
 </div>
@@ -196,9 +197,9 @@ print render($content['comments']);
 
 
 <div class="row contact">
-<div class="fourcol" >Get in <a href="http://holidayniseko.com/contact-us">contact</a> with us today!</div>
-<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:ashley@holidayniseko.com">ashley@holidayniseko.com</a></div>
-<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)136-21-6221</div>
+<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
+<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">ashley@holidayniseko.com</a></div>
+<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
 </div>
 
 
