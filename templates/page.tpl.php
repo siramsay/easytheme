@@ -94,8 +94,8 @@
 </ul>
 -->
 <strong><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></strong> &nbsp; &nbsp; &nbsp; 
-+81 136 21 6221 &nbsp; &nbsp; &nbsp; 
-<a class="headeremail" href="mailto:info@holidayniseko.com">info@holidayniseko.com</a>
++81 123 45 6789 <main phone>&nbsp; &nbsp; &nbsp; 
+<a class="headeremail" href="mailto:sitemail">sitemail@</a>
 </div>
  
         
@@ -112,8 +112,8 @@
 <div id="mob-menu">
 <!-- test ul -->
 <ul class="links the-icons ">
-<li class="phone-icon" > +81-136-21-6221</li>
-<li class="last"><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></li>
+<li class="phone-icon" > +81 123 45 6789 <main phone></li>
+<li class="last"><a href="#" title="holiday niseko accommodation">TEST UL</a></li>
 </ul>
 <?php 
 $main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
