@@ -190,10 +190,10 @@ print drupal_render($main_menu_tree);
  
 <div id="" class="row clearfix" style="margin-bottom: 40px;">
         
-            <div id="back-to-top" class="clearfix" style="float:right;">
-              <a href="#" class"top">back up ↑</a>
-            </div>
-            
+            <!-- <div id="back-to-top" class="clearfix" style="float:right;">
+              back up ↑
+            </div>-->
+           
             <div id="copyright" class="clearfix"><span style="font-size:70%; color:#666;">
               <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>    
               <?php //print t('Theme by'); <a href="http://www.designkojo.net">DK</a> //?></span>  
@@ -202,3 +202,5 @@ print drupal_render($main_menu_tree);
         
         
 </div> <!--END ROW -->
+
+<a href="#" id="back-to-top"> back up ↑ </a> 
