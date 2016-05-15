@@ -148,6 +148,11 @@ print drupal_render($main_menu_tree);
  
 <?php print $messages; ?> <!----- system messages -->
 
+<!-- $show_title need to find out why this is used 
+https://www.drupal.org/node/997148 Suppressing node titles on specific pages.
+http://drupal.stackexchange.com/questions/62468/how-to-hide-title-of-any-content-type-without-using-a-module
+-->
+
 <?php print render($title_prefix); ?>
 <?php if (!$is_front): ?>
 <?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
