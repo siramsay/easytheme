@@ -153,35 +153,6 @@ print render($hero1);
 </div>
 
 <div class="container">
-<div class="row testimonial">
-<!--<h2>What our current owners say</h2>-->
-<div class="fourcol" >
-“best best” <span>service ever</span>
-</div>
-<div class="fourcol" >
-“best best”
-</div>
-<div class="fourcol last" >
-“best best” <span>just for being</span>
-</div>
-</div>
-</div>
-
-<div class="container">
-<div class="row statistics">
-<div class="fourcol_stat" >
-<span>21</span>New Products
-</div>
-<div class="fourcol_stat" >
-<span>73</span>Hours Worked
-</div>
-<div class="fourcol_stat last" >
-<span>334</span>Staff
-</div>
-</div>
-</div>
-
-<div class="container">
 <div class="row">
 <div class="twelvecol" >
 <?php
@@ -194,16 +165,6 @@ print render($content['comments']);
 </div>
 </div>
 </div>
-
-
-<div class="row contact">
-<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
-<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">ashley@holidayniseko.com</a></div>
-<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
-</div>
-
-
-
 
 <?php if (!$page): ?>
   </article> <!-- /.node -->

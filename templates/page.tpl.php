@@ -148,6 +148,11 @@ print drupal_render($main_menu_tree);
  
 <?php print $messages; ?> <!----- system messages -->
 
+<!-- $show_title need to find out why this is used 
+https://www.drupal.org/node/997148 Suppressing node titles on specific pages.
+http://drupal.stackexchange.com/questions/62468/how-to-hide-title-of-any-content-type-without-using-a-module
+-->
+
 <?php print render($title_prefix); ?>
 <?php if (!$is_front): ?>
 <?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
@@ -187,6 +192,14 @@ print drupal_render($main_menu_tree);
            
  			</div>          
 </div><!--END ROW -->
+ 
+ 
+<div class="row contact">
+<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
+<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">asitemail@</a></div>
+<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
+</div> 
+ 
  
 <div id="" class="row clearfix" style="margin-bottom: 40px;">
         
