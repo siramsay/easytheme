@@ -30,6 +30,21 @@ jQuery(function($){
 		//$(this).addClass('active-menu-top');
 	});
 	
+	//back to top
+	//$('#back-to-top').scrollTop( 300 );
+	
+	//smooth scroll to top
+	$scroll_to_top = $('#back-to-top');
+	$scroll_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, 7000
+		);
+	});
+
+	
+	
 	//remove img height and width attributes for better responsiveness
 	$('img').each(function(){
 		$(this).removeAttr('width')
