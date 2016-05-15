@@ -151,11 +151,12 @@ print drupal_render($main_menu_tree);
 <!-- $show_title need to find out why this is used 
 https://www.drupal.org/node/997148 Suppressing node titles on specific pages.
 http://drupal.stackexchange.com/questions/62468/how-to-hide-title-of-any-content-type-without-using-a-module
+if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
 -->
 
 <?php print render($title_prefix); ?>
 <?php if (!$is_front): ?>
-<?php if ($title && $show_title): ?><h1><?php print $title; ?></h1><?php endif; ?>
+<?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
       
@@ -181,16 +182,12 @@ http://drupal.stackexchange.com/questions/62468/how-to-hide-title-of-any-content
 <div class="clear"></div>
 	
 <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
-        	
-            <div class="eightcol">
+<div class="eightcol">
          	 	<?php print render($page['footer']); ?>
-        	</div>
-            
-            
-            <div class="fourcol last">
+</div>
+<div class="fourcol last">
             	<?php print render($page['footer_right']); ?>
-           
- 			</div>          
+</div>
 </div><!--END ROW -->
  
  
