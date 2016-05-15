@@ -202,5 +202,3 @@ print drupal_render($main_menu_tree);
         
         
 </div> <!--END ROW -->
-
-<a href="#" id="back-to-top"> back up ↑ </a> 

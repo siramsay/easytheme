@@ -736,3 +736,15 @@ transition:background-color 2s ease 2s;
 .False:hover {
 background-color: #ffd2d2;
 }
+
+/*btt-is-visible
+*/
+.back-to-top {
+visibility:hidden;
+position: fixed;
+bottom: 20px;
+right: 20px;
+}
+.btt-is-visible {
+visibility:visible;
+}
