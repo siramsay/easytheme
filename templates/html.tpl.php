@@ -15,5 +15,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+<a href="#" class="back-to-top"> back up ↑ </a> 
 </body>
 </html>

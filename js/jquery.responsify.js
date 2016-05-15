@@ -33,13 +33,21 @@ jQuery(function($){
 	//back to top
 	//$('#back-to-top').scrollTop( 300 );
 	
-	//smooth scroll to top
-	$scroll_to_top = $('#back-to-top');
+	//scroll to top
+	//hide or show the "back to top" link
+	
+	$scroll_to_top = $('.back-to-top');
+	
+	$(window).scroll(function(){
+		( $(this).scrollTop() > 300 ) ? $scroll_to_top.addClass('btt-is-visible') : $scroll_to_top.removeClass('btt-is-visible');
+	});
+	
+	
 	$scroll_to_top.on('click', function(event){
 		event.preventDefault();
 		$('body,html').animate({
 			scrollTop: 0 ,
-		 	}, 7000
+		 	}, 1000
 		);
 	});
 
