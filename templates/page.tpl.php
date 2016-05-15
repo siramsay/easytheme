@@ -188,6 +188,14 @@ print drupal_render($main_menu_tree);
  			</div>          
 </div><!--END ROW -->
  
+ 
+<div class="row contact">
+<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
+<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">asitemail@</a></div>
+<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
+</div> 
+ 
+ 
 <div id="" class="row clearfix" style="margin-bottom: 40px;">
         
             <!-- <div id="back-to-top" class="clearfix" style="float:right;">

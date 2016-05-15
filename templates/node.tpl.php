@@ -195,16 +195,6 @@ print render($content['comments']);
 </div>
 </div>
 
-
-<div class="row contact">
-<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
-<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">ashley@holidayniseko.com</a></div>
-<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
-</div>
-
-
-
-
 <?php if (!$page): ?>
   </article> <!-- /.node -->
 <?php endif; ?>
