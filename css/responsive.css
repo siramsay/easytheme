@@ -395,6 +395,7 @@ text-align: right;}
 /* hero font sizes & margins */
 .hero {
 margin-bottom: 0;
+background-size: auto;
 }
 .para_hero p {
 color: #000000;
@@ -442,7 +443,7 @@ padding-bottom: 30px;
 }
 
 }
-}
+
 @media only screen and (max-width: 567px) {	
 .views-exposed-form input.form-submit, #block-multiblock-2 #edit-submit-1, #block-multiblock-6 #edit-submit--2, #block-multiblock-5 #edit-submit--2, #edit-submit-all-niskeo-accommodation {
  	width: 100%;
