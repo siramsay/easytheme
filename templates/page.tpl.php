@@ -70,15 +70,16 @@
 <div class="row rowheader" >   
     
 <hgroup id="logo" class="threecol">
-<!-- HNPM Specific     
-<h2 class="logo"><a href="#" title="Property management"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
- HNPM Specific END-->
-             
+
+<!-- HNPM Specific Converted NEEDS WORK  -->  
+<h2 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
+
 <?php if ($logo): 
 /** 
   * add this logic to node/content type level/ add retina logo info on theme settings page , if done need make logo click disbaled but hav mini top bar with maon site link
   */
 ?>
+
 <div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
 <div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></div>
 <?php endif; ?>
@@ -94,12 +95,12 @@
 </ul>
 -->
 <strong><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></strong> &nbsp; &nbsp; &nbsp; 
-+81 123 45 6789 <main phone>&nbsp; &nbsp; &nbsp; 
++81 123 45 6789 /main phone/ &nbsp; &nbsp; &nbsp; 
 <a class="headeremail" href="mailto:sitemail">sitemail@</a>
 </div>
- 
-        
-<div id="menu-icon">&nbsp<?php print $site_name; ?> &#x2261; </div>
+
+<div id="menu-icon">&nbsp<?php //print $site_name; ?> &#x2261; </div>
+
 </nav>
         
 </div> <!--END ROW -->
@@ -112,7 +113,7 @@
 <div id="mob-menu">
 <!-- test ul -->
 <ul class="links the-icons ">
-<li class="phone-icon" > +81 123 45 6789 <main phone></li>
+<li class="phone-icon" > +81 123 45 6789 /main phone/</li>
 <li class="last"><a href="#" title="holiday niseko accommodation">TEST UL</a></li>
 </ul>
 <?php 
@@ -126,21 +127,18 @@ print drupal_render($main_menu_tree);
 <!--
 <div id="" class="container clearfix">  content wrapper -->
 
-<!-- remove row    
+<!-- remove row -->    
  <div id="" class="row clearfix">
--->
-<!----- remove -->
-								<?php if ($page['sidebar_first']): ?>
-                                  <aside id="sidebar" role="complementary" class="clearfix">
-                                   THIS IS WHERE THE CAMPAIGN LINK ARE RENDERING<?php print render($page['sidebar_first']); ?>
-                                  </aside> 
-                                <?php endif; ?>
+
 
 <div style="background-color:grey">
 <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
 </div>
 
-<?php if ($page['sidebar_second']): ?>
+
+<?php if ($page['sidebar_first']): ?>
+<section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
+<?php elseif ($page['sidebar_second']): ?>
 <section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
 <?php else: ?>
 <section id="content" role="main" class="clearfix">
@@ -178,7 +176,16 @@ if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
        <?php print render($page['sidebar_second']); ?>
       </aside> 
     <?php endif; ?>
+	
+    <?php if ($page['sidebar_first']): ?>
+    <aside id="sidebar" role="complementary" class="fourcol last clearfix">
+    <?php print render($page['sidebar_first']); ?>
+    </aside> 
+     <?php endif; ?>
+<!----- remove / move to node.tpl -->
 
+</div> <!-- temp row -->
+    
 <div class="clear"></div>
 	
 <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
