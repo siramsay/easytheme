@@ -1,5 +1,5 @@
 name = easytheme
-description = Easy Theme V0.1
+description = Easy Theme V0.1.1
 package = Core
 version = VERSION
 core = 7.x
