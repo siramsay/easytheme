@@ -74,11 +74,9 @@
 <!-- HNPM Specific Converted NEEDS WORK  -->  
 <h2 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
 
-<<<<<<< HEAD
-<!-- logo || sitename || slogan Code Missing --> 
-=======
 
->>>>>>> origin/fix-regions-to-match-Bartik
+<!-- logo || sitename || slogan Code Missing --> 
+
 
 </hgroup>
         
