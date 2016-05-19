@@ -75,6 +75,8 @@
 <h2 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
 
 
+<!-- logo || sitename || slogan Code Missing --> 
+
 
 </hgroup>
         
