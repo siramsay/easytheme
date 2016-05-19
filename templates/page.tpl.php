@@ -74,15 +74,7 @@
 <!-- HNPM Specific Converted NEEDS WORK  -->  
 <h2 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
 
-<?php if ($logo): 
-/** 
-  * add this logic to node/content type level/ add retina logo info on theme settings page , if done need make logo click disbaled but hav mini top bar with maon site link
-  */
-?>
-
-<div id="logoimg"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
-<div id="sitename"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></div>
-<?php endif; ?>
+<!-- logo || sitename || slogan Code Missing --> 
 
 </hgroup>
         
@@ -104,6 +96,48 @@
 </nav>
         
 </div> <!--END ROW -->
+
+<div style="visibility:hidden">
+<!-- From Bartik /#main-menu -->
+<?php if ($main_menu): ?>
+      <div id="main-menu" class="navigation">
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#main-menu -->
+<?php endif; ?>
+
+
+
+
+<!-- From Bartik /#secondary-menu -->
+<?php if ($secondary_menu): ?>
+      <div id="secondary-menu" class="navigation">
+        <?php print theme('links__system_secondary_menu', array(
+          'links' => $secondary_menu,
+          'attributes' => array(
+            'id' => 'secondary-menu-links',
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Secondary menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#secondary-menu -->
+<?php endif; ?>
+</div> <!-- /div wrapper vis: hidden for Bartik resources  -->
+
  	   
 </header>
 </div>
@@ -127,8 +161,13 @@ print drupal_render($main_menu_tree);
 <!--
 <div id="" class="container clearfix">  content wrapper -->
 
+
+
+
+
+
 <!-- remove row -->    
- <div id="" class="row clearfix">
+<div id="" class="row clearfix">
 
 
 <div style="background-color:grey">
