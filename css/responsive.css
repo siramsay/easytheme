@@ -363,6 +363,13 @@ width: 40%;
 #menu-icon, #search-icon {  
 line-height: 0.1em;
 }
+/* hide */
+#main-menu {
+	display: none;
+}
+#mob-menu #main-menu {
+	display: block;
+}
 /* show hide */
 .mobile-hide {
 	display: none;

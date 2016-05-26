@@ -74,9 +74,7 @@
 <!-- HNPM Specific Converted NEEDS WORK  -->  
 <h2 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"> Holiday Niseko <span>Ski Japan Niseko accommodation and snowboard packages</span></a></h2>
 
-
 <!-- logo || sitename || slogan Code Missing --> 
-
 
 </hgroup>
         
@@ -87,19 +85,10 @@
 <ul id="lang">
 <li id="lang_jap"><a href="http://holidayniseko.jp">日本語</a></li>
 </ul>
--->
-<strong><a href="../niseko-accommodation" title="holiday niseko accommodation">Accommodation</a></strong> &nbsp; &nbsp; &nbsp; 
+--> 
 +81 123 45 6789 /main phone/ &nbsp; &nbsp; &nbsp; 
 <a class="headeremail" href="mailto:sitemail">sitemail@</a>
 </div>
-
-<div id="menu-icon">&nbsp<?php //print $site_name; ?> &#x2261; </div>
-
-</nav>
-        
-</div> <!--END ROW -->
-
-<div style="visibility:hidden">
 <!-- From Bartik /#main-menu -->
 <?php if ($main_menu): ?>
       <div id="main-menu" class="navigation">
@@ -118,9 +107,13 @@
       </div> <!-- /#main-menu -->
 <?php endif; ?>
 
+<div id="menu-icon">&nbsp<?php //print $site_name; ?> &#x2261; </div>
 
+</nav>
+        
+</div> <!--END ROW -->
 
-
+<div style="visibility:hidden">
 <!-- From Bartik /#secondary-menu -->
 <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
@@ -150,8 +143,23 @@
 <!-- test ul -->
 <ul class="links the-icons ">
 <li class="phone-icon" > +81 123 45 6789 /main phone/</li>
-<li class="last"><a href="#" title="holiday niseko accommodation">TEST UL</a></li>
 </ul>
+<?php if ($main_menu): ?>
+      <div id="main-menu" class="navigation">
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#main-menu -->
+<?php endif; ?>
 <?php 
 $main_menu_tree = menu_tree(variable_get('top_links_source', 'menu-top'));
 print drupal_render($main_menu_tree);
