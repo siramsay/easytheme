@@ -176,12 +176,19 @@ print drupal_render($main_menu_tree);
 
 
 
-<!-- remove row -->    
+<!-- remove row if not a page -->     
+<?php if (!$page): ?>
 <div id="" class="row clearfix">
+<?php endif; ?>
+
 
 
 <div style="background-color:grey">
 <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+</div>
+<div style="background-color:grey">
+<?php print render($page['help']); ?>  <!--- help  -->
+<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 </div>
 
 
@@ -203,15 +210,10 @@ if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
 
 <?php print render($title_prefix); ?>
 <?php if (!$is_front): ?>
-<?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; ?>
+<?php if ($title): ?><h1><?php //print $title; ?></h1><?php endif; // MAYBE REMOVE THIS ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
       
-<div style="background-color:grey">
-<?php print render($page['help']); ?>  <!--- help  -->
-<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul> links<?php endif; ?>
-</div>
-
 <!--<strong> THIS IS ABOVE THE CONTENT $page render in the page tpl</strong>-->
 <?php print render($page['content']); ?>
 <!--<strong> THIS IS BELOW THE CONTENT $page render in the page tpl</strong>-->
@@ -233,7 +235,10 @@ if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
      <?php endif; ?>
 <!----- remove / move to node.tpl -->
 
+<?php if (!$page): ?>
 </div> <!-- temp row -->
+<?php endif; ?>
+
     
 <div class="clear"></div>
 	
