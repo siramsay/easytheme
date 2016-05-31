@@ -129,7 +129,7 @@ print render($hero1);
  
 <!-- END rowhero -->
 
-<div class="hero_inner" style="z-index:5;"> </div>
+<div class="hero_inner_" style="z-index:5;"> </div>
 
 <div class="rowhero para_hero" style="z-index:6;">
 <?php print render ($node->field_hero_paragraph['und'][0]['value']); ?>
@@ -143,8 +143,10 @@ print render($hero1);
 <div class="clearfix"></div> 
 
 <div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
-	
-<?php //print $title ?> <!-- title removed for HN as in header <h2 class="title"></h2> -->
+
+<?php if ($page): ?>	
+<h2 class="title"><?php print $title ?></h2>
+<?php endif; ?>
 
 <?php
       // Hide comments and links now so that we can render them later.
