@@ -241,55 +241,20 @@ if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
 <div class="row">
 <div id="footer">
 <div class="business threecol">
-<h3>Holiday Niseko</h3>
-<?php 
-$secmenu = menu_navigation_links('secondary-menu');
-print theme('links__secondary_menu', array('links' => $secmenu));
+<h3>Info</h3>
 
-?>
-<ul>
-<li class="co">
-<?php   
-            {	
-            $block = module_invoke('views', 'block_view', 'Services_PDF-block_3');
-            print render ($block['content']);
-            
-            }
-?>
-</li>
-<li class="co">
-<?php 
-            {	
-            $block = module_invoke('views', 'block_view', 'Services_PDF-block_2');
-            print render ($block['content']);
-            
-            }
-?>
-</li>
 <li class="ec"><a href="#" title="e-checkin" >e-checkin</a></li>
 </ul>
 </div><!-- END threecol -->
         
 <div class="info threecol">
-<h3>Niseko Info</h3>
+<h3>Info</h3>
 
-<?php
-$menu_niseko_info = menu_tree_all_data('menu-niseko-info', null, 3);
-render_menu_tree($menu_niseko_info);
-?>
-<ul>
-<li class="blog"><a href="/blog" title="e-checkin" >Blog</a></li>
-</ul>
-<?php if (isset($nisekoinfo_links)) : ?>
-<?php endif; ?>
 </div><!-- END threecol -->
 
 <div class="social threecol">
 <h3>Follow</h3>  
-<ul class="links">
-<li class="fb"><a href="http://www.facebook.com/holidayniseko" title="find us on facebook" >find us on facebook</a></li>
-<li class="tw"><a href="http://twitter.com/holidayniseko" title="follow us on twitter" >follow us on twitter</a></li>
-</ul>
+
 </div><!-- END threecol -->
             
 <div class=" threecol last">
