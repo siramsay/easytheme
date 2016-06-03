@@ -39,7 +39,7 @@ function hn_employ_preprocess_page(&$variables, $hook) {
   
 }
 
-function hn_employ_preprocess_node(&$variables) {
+function easytheme_preprocess_node(&$variables) {
 
   // Get a list of all the regions for this theme
   foreach (system_region_list($GLOBALS['theme']) as $region_key => $region_name) {
@@ -58,9 +58,9 @@ function hn_employ_preprocess_node(&$variables) {
    *
    * http://www.raisedeyebrow.com/blog/2012/07/displaying-drupal-context-regions-node-templates
    */  
-  $reaction = context_get_plugin('reaction', 'block');
+  //$reaction = context_get_plugin('reaction', 'block');
   //$var = $variables['region']['sidebar_first'];
-  $variables['region']['sidebar_first'] = ($reaction->block_get_blocks_by_region('sidebar_first')); //
+  //$variables['region']['sidebar_first'] = ($reaction->block_get_blocks_by_region('sidebar_first')); //
 
 }
 
