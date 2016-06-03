@@ -8,8 +8,8 @@ engine = phptemplate
 #screenshot = img/screenshot.png
 
 regions[search_top] = search top
-regions[sidebar_first] = left sidebar?
-regions[sidebar_second] = content right sidebar
+regions[sidebar_first] = left sidebar
+regions[sidebar_second] = sidebar Second
 regions[content] = content
 
 #regions[content_top_a_1] = content top a:1
