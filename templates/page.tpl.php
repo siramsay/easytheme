@@ -178,7 +178,7 @@ print drupal_render($main_menu_tree);
 
 <!-- remove row if not a page -->     
 <?php if (!$page): ?>
-<div id="" class="row clearfix">
+<!--<div id="" class="row clearfix"> moved this to below -->
 <?php endif; ?>
 
 
@@ -190,15 +190,15 @@ print drupal_render($main_menu_tree);
 <?php print render($page['help']); ?>  <!--- help  -->
 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 </div>
-
-
-<?php if ($page['sidebar_first']): ?>
-<section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
-<?php elseif ($page['sidebar_second']): ?>
-<section id="content" role="main" class="eightcol clearfix"> <!----- opening to section for sidebar pages -->
-<?php else: ?>
-<section id="content" role="main" class="clearfix">
+<?php if ($page): ?>
+  <?php if ($content_links = render($content['links'])): ?> <!-- this solution for hiding regions in theme is dicusssed @ #953034 -->
+    <div class="links admin" style="background-color:#CCC; margin-bottom:20px;"> <!--this still shows see issue on hiding above <br /><br />-->
+      <?php print $content_links; ?><!--add if campaign only on campaign page<br /><br />-->
+    </div>
+ <?php endif; ?>
 <?php endif; ?>
+
+
  
 <?php print $messages; ?> <!----- system messages -->
 
@@ -208,38 +208,24 @@ http://drupal.stackexchange.com/questions/62468/how-to-hide-title-of-any-content
 if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
 -->
 
+<div class="container">
+<div class="row">  
+
 <?php print render($title_prefix); ?>
-<?php if (!$is_front): ?>
-<?php if ($title): ?><h1><?php //print $title; ?></h1><?php endif; // MAYBE REMOVE THIS ?>
+<?php if (!$page): ?>
+<?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; // MAYBE REMOVE THIS ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
-      
+
+</div>
+</div>
+ 
 <!--<strong> THIS IS ABOVE THE CONTENT $page render in the page tpl</strong>-->
 <?php print render($page['content']); ?>
 <!--<strong> THIS IS BELOW THE CONTENT $page render in the page tpl</strong>-->
-      
-</section>
+
 <!-- /#main -->
 
-<!----- remove / move to node.tpl -->
-  	<?php if ($page['sidebar_second']): ?>
-      <aside id="sidebar" role="complementary" class="fourcol last clearfix">
-       <?php print render($page['sidebar_second']); ?>
-      </aside> 
-    <?php endif; ?>
-	
-    <?php if ($page['sidebar_first']): ?>
-    <aside id="sidebar" role="complementary" class="fourcol last clearfix">
-    <?php print render($page['sidebar_first']); ?>
-    </aside> 
-     <?php endif; ?>
-<!----- remove / move to node.tpl -->
-
-<?php if (!$page): ?>
-</div> <!-- temp row -->
-<?php endif; ?>
-
-    
 <div class="clear"></div>
 	
 <div class="row clearfix" style="padding-top:10px; margin-bottom: 40px; background-color:#f1f1f1;">
@@ -252,12 +238,71 @@ if ($title && $show_title): ?><h1><php print $title; ?></h1><php endif; ?>
 </div><!--END ROW -->
  
  
-<div class="row contact">
-<div class="fourcol" >Get in <a href="http://">contact</a> with us today!</div>
-<div class="fourcol" ><i class="demo-icon icon-mail"></i> <a href="mailto:">asitemail@</a></div>
-<div class="fourcol last the-icons" ><i class="demo-icon icon-phone-1"></i> +81(0)123-45-6789</div>
+<div class="row">
+<div id="footer">
+<div class="business threecol">
+<h3>Holiday Niseko</h3>
+<?php 
+$secmenu = menu_navigation_links('secondary-menu');
+print theme('links__secondary_menu', array('links' => $secmenu));
+
+?>
+<ul>
+<li class="co">
+<?php   
+            {	
+            $block = module_invoke('views', 'block_view', 'Services_PDF-block_3');
+            print render ($block['content']);
+            
+            }
+?>
+</li>
+<li class="co">
+<?php 
+            {	
+            $block = module_invoke('views', 'block_view', 'Services_PDF-block_2');
+            print render ($block['content']);
+            
+            }
+?>
+</li>
+<li class="ec"><a href="#" title="e-checkin" >e-checkin</a></li>
+</ul>
+</div><!-- END threecol -->
+        
+<div class="info threecol">
+<h3>Niseko Info</h3>
+
+<?php
+$menu_niseko_info = menu_tree_all_data('menu-niseko-info', null, 3);
+render_menu_tree($menu_niseko_info);
+?>
+<ul>
+<li class="blog"><a href="/blog" title="e-checkin" >Blog</a></li>
+</ul>
+<?php if (isset($nisekoinfo_links)) : ?>
+<?php endif; ?>
+</div><!-- END threecol -->
+
+<div class="social threecol">
+<h3>Follow</h3>  
+<ul class="links">
+<li class="fb"><a href="http://www.facebook.com/holidayniseko" title="find us on facebook" >find us on facebook</a></li>
+<li class="tw"><a href="http://twitter.com/holidayniseko" title="follow us on twitter" >follow us on twitter</a></li>
+</ul>
+</div><!-- END threecol -->
+            
+<div class=" threecol last">
+<?php
+print '<h2><a href="'. check_url($front_page) .'" title="'. $site_name.'">';
+?>
+Holiday Niseko
+<span>accommodation and ski packages</span>
+</a>
+</h2>
+</div><!-- END threecol last -->
 </div> 
- 
+</div>
  
 <div id="" class="row clearfix" style="margin-bottom: 40px;">
         

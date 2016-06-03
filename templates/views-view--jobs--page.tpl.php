@@ -54,9 +54,12 @@
     </div>
   <?php endif; ?>
 
+<sidebar class="threecol">
  <!-- <h2>SHOULD BE DYNAMIC</h2>-->
-<?php //print render(block_get_blocks_by_region('sidebar_second'));?>
+<?php print render(block_get_blocks_by_region('sidebar_second'));?>
+</sidebar>
 
+<section class="ninecol last">
   <?php if ($rows): ?>
     <div class="view-content">
       <?php print $rows; ?>
@@ -66,6 +69,8 @@
       <?php print $empty; ?>
     </div>
   <?php endif; ?>
+</section>
+
 
   <?php if ($pager): ?>
     <?php print $pager; ?>
