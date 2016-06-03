@@ -104,7 +104,7 @@
 <?php if ($page): ?>
   <?php if ($content_links = render($content['links'])): ?> <!-- this solution for hiding regions in theme is dicusssed @ #953034 -->
     <div class="links admin" style="background-color:#CCC; margin-bottom:20px;"> <!--this still shows see issue on hiding above <br /><br />-->
-      <?php print $content_links; ?>  <!--add if campaign only on campaign page<br /><br />-->
+      <?php print $content_links; ?><!--add if campaign only on campaign page<br /><br />-->
     </div>
  <?php endif; ?>
 <?php endif; ?>
@@ -144,7 +144,7 @@ print render($hero1);
 
 <div class="row content"<?php print $content_attributes; ?>> <!-- content_attribute don't render-->
 
-<?php if ($page): ?>	
+<?php if (!$page): ?>	
 <h2 class="title"><?php print $title ?></h2>
 <?php endif; ?>
 
@@ -156,7 +156,33 @@ print render($hero1);
 
 <div class="container">
 <div class="row">
-<div class="twelvecol" >
+
+<!----- remove / move to node.tpl -->
+  	<?php if ($region['sidebar_second']): ?>
+      <aside id="sidebar" role="complementary" class="fourcol clearfix">
+       <?php print render($region['sidebar_second']); ?>
+      </aside>
+      
+    <?php endif; ?>
+	
+    <?php if ($region['sidebar_first']): ?>
+    <aside id="sidebar" role="complementary" class="fourcol clearfix">
+    <?php print render($region['sidebar_first']); ?>
+    </aside>
+    
+     <?php endif; ?>
+<!----- remove / move to node.tpl -->
+
+
+
+
+<?php if ($region['sidebar_first']): ?>
+<section id="content" role="main" class="eightcol last clearfix"> <!----- opening to section for sidebar pages -->
+<?php elseif ($region['sidebar_second']): ?>
+<section id="content" role="main" class="eightcol last clearfix"> <!----- opening to section for sidebar pages -->
+<?php else: ?>
+<section id="content" role="main" class="twelvecol clearfix">
+<?php endif; ?>
 <?php
 print render($content);
 ?>
@@ -164,9 +190,20 @@ print render($content);
 <?php 
 print render($content['comments']); 
 ?>
+</section>
+
+
+
+
+
 </div>
 </div>
-</div>
+
+
+
+
+
+
 
 <?php if (!$page): ?>
   </article> <!-- /.node -->
